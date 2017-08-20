@@ -1,0 +1,55 @@
+#Tank Collectors:
+
+Web app for tank enthusiast, in it the users will find a card collecting game in wich they will be able to collect and trade their favorites historic tanks.
+
+##What I want for the MVP:
+
+- Each user should be able to create an acount and login in the web.
+- When creating a new account the user will recive 10 randon cards wich will be store in its user page.
+- Every day users that login will recive 3 random new cards.
+- Each loged in user will have a page where they can go thru their collected cards, selec the repeated ones or the ones they dont want and then be able to trade them whith other users.
+- The trade will be made automatically:
+    + A user on his user page will be able selecs a card that wants to be trade, this card will be shown on the main page.
+    + On the main page other users will be able to mark it as favorite.
+    + If other user select it as favorite and has a diferent card up to trade, then the trade will be automatically made.
+    + If the user that mark it as favorite have multiples card up to trade the sistem will randomly selec one thats diferent from the favorited one.
+    + If the user that mark it as favorite have no cards up to trade the trade would not happend till the user mark one of his own cards as tradable. The same will happend if the user have one card up to trade and its the same as the one he favorited.
+- 
+
+
+
+
+- Login por usuario, donde se guardaran los tanques coleccionados.
+- Base de datos con minimo 300-600 tanques.
+- Cada tanque se muestre como una targeta donde aparesca:
+    + Numero del tanke en base a las targetas (ID)
+    + Imagen
+    + Nombre 
+    + Modelo
+    + Fetcha de creacion
+    + Sobrenombre (si aplica)
+    + Breve descripcion
+- Al crear un usuario se daran 10 tanques aleatorios.
+- Cada dia, al hacer log in, se daran 3 tanque aleatorios.
+- Poder intercambiar 3 tanques repetidos por otro distinto elegido aleatoriamente.
+
+##Estructura de la pagina:
+
+- Una pagina principal que explique la pagina y su funcion.
+- Un login.
+- Pagina de usuario, donde pueda revisar sus colecciones.
+- Pagina para canjear los tanques repetidos por nuevos.
+- Pagina donde se habran los paquetes de tanques.
+- Pagina solo para administrador donde se puedan introducir de manera comoda nuevos tanques.
+
+##Apis a usar: 
+
+- [World of Tanks api.](https://developers.wargaming.net/reference/all/wot/encyclopedia/tanks/?application_id=demo&r_realm=ru)
+
+##Extras:
+
+- Agregar a las cartas Rareza del tanque y que esto afecte la frecuencia con la que aparecen.
+- El cange de tanques se hara en base a la rareza del mismo.
+- Con 10 tankes iguales se podra canjear por un tanque de mayor rareza.
+- Los usuarios pueden intercambiar tanques entre ellos.
+- Pagina donde los usuarios puedan recomendar tanques (igual a la pagina creadora del administrador, pero que se guarde en algun lado para que luego el administrador pueda decidir que cuelz y que no)
