@@ -1,0 +1,24 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "Web app for tank enthusiast, in it the users will find a card collecting game in wich they will be able to collect and trade their favorites historic tanks.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/app",
+    "dev": "nodemon server/app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KV-Disco/tank-card-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KV-Disco/tank-card-project/issues"
+  },
+  "homepage": "https://github.com/KV-Disco/tank-card-project#readme",
+  "dependencies": {
+    "bower": "^1.8.0",
+    "express": "^4.15.4"
+  }
+}

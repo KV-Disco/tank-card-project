@@ -9,8 +9,8 @@ Web app for tank enthusiast, in it the users will find a card collecting game in
 - Every day users that login will recive 3 random new cards.
 - Each loged in user will have a page where they can go thru their collected cards, selec the repeated ones or the ones they dont want and then be able to trade them whith other users.
 - The trade will be made automatically:
-    + A user on his user page will be able selecs a card that wants to be trade, this card will be shown on the main page.
-    + On the main page other users will be able to mark it as favorite.
+    + A user on his userpage will be able selecs a card that wants to be trade, this card will be shown on the mainpage.
+    + On the mainpage other users will be able to mark it as favorite.
     + If other user select it as favorite and has a diferent card up to trade, then the trade will be automatically made.
     + If the user that mark it as favorite have multiples card up to trade the sistem will randomly selec one thats diferent from the favorited one.
     + If the user that mark it as favorite have no cards up to trade the trade would not happend till the user mark one of his own cards as tradable. The same will happend if the user have one card up to trade and its the same as the one he favorited.

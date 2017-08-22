@@ -1,0 +1,20 @@
+{
+  "name": "final-project",
+  "description": "Web app for tank enthusiast, in it the users will find a card collecting game in wich they will be able to collect and trade their favorites historic tanks.",
+  "main": "index.js",
+  "authors": [
+    "Humberto Acea <humbertoacea@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/KV-Disco/tank-card-project",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
