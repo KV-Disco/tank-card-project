@@ -223,48 +223,103 @@ header.smaller nav a {
     height: 100px;
     line-height: 100px;
     text-align: center; }
-
   header nav {
     display: block;
     float: none;
     height: 50px;
     text-align: center;
     margin: 0 auto; }
-
   header nav a {
     line-height: 50px;
     margin: 0 10px; }
-
   header.smaller {
     height: 75px; }
-
   header.smaller h1#logo {
     height: 40px;
     line-height: 40px;
     font-size: 30px; }
-
   header.smaller nav {
     height: 35px; }
-
   header.smaller nav a {
     line-height: 35px; } }
+
 @media all and (max-width: 600px) {
   .container {
     width: 100%; }
-
   #info-bar a {
     display: block; }
-
   #info-bar span.all-tutorials,
   #info-bar span.back-to-tutorial {
     width: 100%; }
-
   #info-bar span.all-tutorials,
   #info-bar span.back-to-tutorial {
     float: none;
     text-align: center; }
-
   #info-bar span.all-tutorials {
     border-bottom: solid 1px #0793e2; } }
 
-/*# sourceMappingURL=styles.css.map */
+.exampleCard {
+  height: 200px;
+  width: auto;
+  display: block;
+  margin: auto; }
+
+.cards {
+  border: 5px solid;
+  box-shadow: 3px -2px 5px 2px black;
+  position: relative;
+  margin: 10px;
+  margin-bottom: -250px;
+  width: 200px;
+  height: 350px;
+  padding: 5px 15px;
+  transition-timing-function: ease; }
+  .cards .imgContainer {
+    height: 120px;
+    width: 100%;
+    background-image: url("../img/Tiger-I.jpg");
+    background-size: cover;
+    background-position: center center; }
+  .cards .tankDescription {
+    height: 155px;
+    overflow: fade(5%);
+    overflow: hidden; }
+    .cards .tankDescription p {
+      text-align: justify;
+      text-justify: inter-word;
+      font-size: 12px; }
+
+.multiline-ellipsis {
+  display: block;
+  display: -webkit-box;
+  max-width: 400px;
+  height: 109.2px;
+  margin: 0 auto;
+  font-size: 26px;
+  line-height: 1.4;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.cards {
+  transition-property: transform;
+  transition-duration: .2s;
+  transition-timing-function: ease-in; }
+
+.cards:hover {
+  transform: translateY(-100px); }
+
+.tradingPark {
+  padding-bottom: 300px; }
+
+#backgroundTank {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat; }
+
+.rowsOfCards {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left; }
