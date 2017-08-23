@@ -152,7 +152,11 @@ header {
   -moz-transition: height 0.3s;
   -ms-transition: height 0.3s;
   -o-transition: height 0.3s;
-  transition: height 0.3s; }
+  transition: height 0.3s;
+  border-bottom: 3px solid red; }
+  header span {
+    color: red;
+    font-style: italic; }
 
 header h1#logo {
   display: inline-block;
@@ -176,7 +180,7 @@ header nav {
 header nav a {
   line-height: 150px;
   margin-left: 20px;
-  color: #9fdbfc;
+  color: #E9E2BF;
   font-weight: 700;
   font-size: 18px;
   -webkit-transition: all 0.3s;
@@ -200,8 +204,6 @@ header.smaller h1#logo {
 header.smaller nav a {
   line-height: 75px; }
 
-/* =Footer
--------------------------------------------------------------- */
 /* =Extras
 -------------------------------------------------------------- */
 .clearfix:after {
@@ -308,7 +310,7 @@ header.smaller nav a {
   transition-timing-function: ease-in; }
 
 .cards:hover {
-  transform: translateY(-100px); }
+  transform: translateY(-80px); }
 
 .tradingPark {
   padding-bottom: 300px; }
@@ -323,3 +325,47 @@ header.smaller nav a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: left; }
+
+.carousel-inner.onebyone-carosel {
+  margin: auto;
+  width: 100%; }
+
+.onebyone-carosel .active.left {
+  left: -24%; }
+
+.onebyone-carosel .active.right {
+  left: 24%;
+  background: yellow; }
+
+.onebyone-carosel .next {
+  left: 25%; }
+
+.onebyone-carosel .prev {
+  left: -25%; }
+
+.carouselContainer {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .carouselContainer h2 {
+    font-weight: bold; }
+
+.cardsCarrousel {
+  border: 5px solid;
+  box-shadow: 3px -2px 5px 2px black;
+  margin: 10px;
+  width: 200px;
+  height: 350px; }
+  .cardsCarrousel .imgContainer {
+    height: 120px;
+    width: 100%;
+    background-image: url("../img/Tiger-I.jpg");
+    background-size: cover;
+    background-position: center center; }
+  .cardsCarrousel .tankDescription {
+    height: 155px;
+    overflow: fade(5%);
+    overflow: hidden; }
+    .cardsCarrousel .tankDescription p {
+      text-align: justify;
+      text-justify: inter-word;
+      font-size: 12px; }

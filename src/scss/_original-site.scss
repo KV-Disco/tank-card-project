@@ -149,7 +149,13 @@ header {
   -moz-transition: height 0.3s;
   -ms-transition: height 0.3s;
   -o-transition: height 0.3s;
-  transition: height 0.3s; }
+  transition: height 0.3s;
+  border-bottom: 3px solid red; 
+  span{
+    color: red;
+    font-style: italic
+    }}
+
   header h1#logo {
     display: inline-block;
     height: 100px;
@@ -170,7 +176,7 @@ header {
     header nav a {
       line-height: 150px;
       margin-left: 20px;
-      color: #9fdbfc;
+      color: $textColor;
       font-weight: 700;
       font-size: 18px;
       -webkit-transition: all 0.3s;
@@ -190,8 +196,6 @@ header {
     header.smaller nav a {
       line-height: 75px; }
 
-/* =Footer
--------------------------------------------------------------- */
 /* =Extras
 -------------------------------------------------------------- */
 .clearfix:after {
