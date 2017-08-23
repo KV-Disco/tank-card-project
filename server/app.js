@@ -4,7 +4,9 @@ const path = require('path')
 const app = express()
 const PORT = process.env.PORT || 3001
 
-app.use(express.static(path.join(__dirname, '../client')))
+const pathClient = path.join(__dirname, '../client')
+console.log(pathClient)
+app.use(express.static(pathClient))
 
 // app.get('/home', (req, res) => res.sendFile(path.join(__dirname, '../client/index.html')))
 
