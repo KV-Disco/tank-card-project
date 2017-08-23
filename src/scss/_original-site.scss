@@ -169,7 +169,14 @@ header {
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
-    transition: all 0.3s; }
+    transition: all 0.3s; 
+    a{
+      color: white;
+      }
+    a:hover{
+      color: white;
+      text-decoration: none;
+      }}
   header nav {
     display: inline-block;
     float: right; }
