@@ -4,6 +4,7 @@
   "description": "Web app for tank enthusiast, in it the users will find a card collecting game in wich they will be able to collect and trade their favorites historic tanks.",
   "main": "index.js",
   "scripts": {
+    "postinstall": "node ./node_modules/bower/bin/bower install",
     "start": "node server/app",
     "dev": "nodemon server/app",
     "build:scss": "node-sass src/scss/styles.scss client/css/styles.css",
