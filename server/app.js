@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3001
 
 app.use(express.static(path.join(__dirname, '../client')))
 
-app.get('/', (req, res) => res.send('hello'))
+app.get('/', (req, res) => res.send(path.join(__dirname, '../client/index.html'))
 
 app.listen(PORT)
 console.log(`Dude PORT ${PORT} is listening.... be scare.....`)
