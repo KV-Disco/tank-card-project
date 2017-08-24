@@ -282,7 +282,7 @@ header.smaller nav a {
   box-shadow: 3px -2px 5px 2px black;
   position: relative;
   margin: 10px;
-  margin-bottom: -250px;
+  margin-bottom: -200px;
   width: 200px;
   height: 350px;
   padding: 5px 15px;
@@ -347,12 +347,18 @@ input {
   .rowsOfCards {
     justify-content: center; } }
 
-.signInPopUp {
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  left: 200px;
-  top: 300px; }
+.signInPopUpContainer {
+  width: 100%;
+  position: fixed;
+  top: 30%; }
+  .signInPopUpContainer .signInPopUp {
+    text-shadow: 1px 1px 3px gray;
+    border-radius: 5px;
+    background-color: black;
+    padding: 10px 20px;
+    border: 3px solid red; }
+    .signInPopUpContainer .signInPopUp .control-group {
+      padding: 10px; }
 
 .carousel-inner.onebyone-carosel {
   margin: auto;
