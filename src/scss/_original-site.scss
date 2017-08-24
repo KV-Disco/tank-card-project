@@ -61,6 +61,7 @@ a img {
 body {
   background-color: black;
   color: $textColor;
+  text-shadow: 2px 2px 3px black;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -89,7 +90,8 @@ a:hover {
   background: -webkit-linear-gradient(top, rgba(0,0,0,0) 1px,rgba(17,17,17,1) 600px,rgba(35,35,35,1) 900px,rgba(22,22,22,1) 99%);
   background: linear-gradient(to bottom, rgba(0,0,0,0) 1px,rgba(17,17,17,1) 600px,rgba(35,35,35,1) 900px,rgba(22,22,22,1) 99%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#161616',GradientType=0 );
-  padding-top: 150px; }
+  padding-top: 150px;
+  min-height: 700px; }
 
 .container {
   width: 80%;
@@ -150,11 +152,7 @@ header {
   -ms-transition: height 0.3s;
   -o-transition: height 0.3s;
   transition: height 0.3s;
-  border-bottom: 3px solid red; 
-  span{
-    color: red;
-    font-style: italic
-    }}
+  border-bottom: 3px solid red; }
 
   header h1#logo {
     display: inline-block;
@@ -162,7 +160,7 @@ header {
     line-height: 100px;
     float: left;
     font-family: "Oswald", sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     color: white;
     font-weight: 400;
     -webkit-transition: all 0.3s;
@@ -170,6 +168,12 @@ header {
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; 
+    span{
+    color: red;
+    font-size: 60px;
+    font-style: italic;
+    font-family: "Black Ops One";
+    }
     a{
       color: white;
       }
@@ -199,7 +203,8 @@ header {
       width: 150px;
       height: 75px;
       line-height: 75px;
-      font-size: 30px; }
+      font-size: 30px;
+      span{font-size: 30px;} }
     header.smaller nav a {
       line-height: 75px; }
 

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TANK FIELD</title>
+    <link href="bower_components\bootstrap\dist\css\bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="backgroundTank">
+            <!-- header -->
+            <header>
+                <div class="container clearfix">
+                    <h1 id="logo"><a href="/">TheCardsOf<span>KURSK</span></a></h1>
+                    <nav>
+                        <a href="/user-page.html" class="signIn">Sign In</a>
+                        <a href="/registration.html">Sign Up</a>
+                    </nav>
+                </div>
+            </header>
+            <!-- /header -->
+            <!-- description -->
+            <div id="main">
+                <div id="content">
+                    <section>
+                        <div class="container registrationContainer">
+                            <div class="col-xs-12 col-md-6 col-md-offset-3">
+                                <form class="form-horizontal" action='' method="POST">
+                                    <fieldset>
+                                        <div id="legend">
+                                            <h1 class="registration">Register</h1>
+                                        </div>
+                                        <div class="control-group">
+                                            <!-- Username -->
+                                            <label class="control-label" for="username">Username</label>
+                                            <div class="controls">
+                                                <input type="text" id="username" name="username" placeholder="">
+                                                <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <!-- E-mail -->
+                                            <label class="control-label" for="email">E-mail</label>
+                                            <div class="controls">
+                                                <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
+                                                <p class="help-block">Please provide your E-mail</p>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <!-- Password-->
+                                            <label class="control-label" for="password">Password</label>
+                                            <div class="controls">
+                                                <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+                                                <p class="help-block">Password should be at least 4 characters</p>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <!-- Password -->
+                                            <label class="control-label" for="password_confirm">Password (Confirm)</label>
+                                            <div class="controls">
+                                                <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
+                                                <p class="help-block">Please confirm password</p>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <!-- Button -->
+                                            <div class="controls">
+                                                <button class="btn btn-success">Register</button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /description -->
+                </div>
+            </div>
+            <!-- #main -->
+        </div>
+        <!-- /#backgroundTank -->
+    </div>
+    <!-- /#wrapper -->
+    <!--JQuery -->
+    <script src="bower_components\jquery\dist\jquery.js"></script>
+    <!-- BoostrapJS -->
+    <script src="bower_components\bootstrap\dist\js\bootstrap.js"></script>
+    <!-- Header JS -->
+    <script src="js\header.js"></script>
+    <!-- Events -->
+    <script src="js\events-home.js"></script>
+    <!-- Carrousel -->
+    <script src="js\carrousel-user-page.js"></script>
+</body>
+
+</html>

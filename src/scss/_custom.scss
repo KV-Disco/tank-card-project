@@ -17,6 +17,7 @@ $textColor: #E9E2BF;
     height: 350px;
     padding: 5px 15px;
     transition-timing-function: ease;
+    text-shadow: 0px 0px 2px white;
     .imgContainer {
         height: 120px;
         width: 100%;
@@ -58,7 +59,7 @@ $textColor: #E9E2BF;
 }
 
 .cards:hover {
-  transform: translateY(-80px);
+  transform: translateY(-65px);
 }
 
 .tradingPark {
@@ -68,7 +69,9 @@ $textColor: #E9E2BF;
 #backgroundTank {
     background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
+    min-height: 700px;
 }
+
 
 .rowsOfCards {
     margin-top: 100px;
@@ -76,4 +79,23 @@ $textColor: #E9E2BF;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: left;
+}
+
+input{
+    color: black;
+    width: 100%;
+}
+
+@media all and (max-width: 800px) {
+    .rowsOfCards{
+        justify-content: center;
+    }
+}
+
+.signInPopUp{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 200px;
+    top: 300px;
 }

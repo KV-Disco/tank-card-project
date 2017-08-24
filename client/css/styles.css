@@ -57,6 +57,7 @@ a img {
 body {
   background-color: black;
   color: #E9E2BF;
+  text-shadow: 2px 2px 3px black;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -85,7 +86,8 @@ a:hover {
   background: -webkit-linear-gradient(top, transparent 1px, #111111 600px, #232323 900px, #161616 99%);
   background: linear-gradient(to bottom, transparent 1px, #111111 600px, #232323 900px, #161616 99%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#161616',GradientType=0 );
-  padding-top: 150px; }
+  padding-top: 150px;
+  min-height: 700px; }
 
 .container {
   width: 80%;
@@ -154,9 +156,6 @@ header {
   -o-transition: height 0.3s;
   transition: height 0.3s;
   border-bottom: 3px solid red; }
-  header span {
-    color: red;
-    font-style: italic; }
 
 header h1#logo {
   display: inline-block;
@@ -164,7 +163,7 @@ header h1#logo {
   line-height: 100px;
   float: left;
   font-family: "Oswald", sans-serif;
-  font-size: 60px;
+  font-size: 50px;
   color: white;
   font-weight: 400;
   -webkit-transition: all 0.3s;
@@ -172,6 +171,11 @@ header h1#logo {
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
+  header h1#logo span {
+    color: red;
+    font-size: 60px;
+    font-style: italic;
+    font-family: "Black Ops One"; }
   header h1#logo a {
     color: white; }
   header h1#logo a:hover {
@@ -205,6 +209,8 @@ header.smaller h1#logo {
   height: 75px;
   line-height: 75px;
   font-size: 30px; }
+  header.smaller h1#logo span {
+    font-size: 30px; }
 
 header.smaller nav a {
   line-height: 75px; }
@@ -280,7 +286,8 @@ header.smaller nav a {
   width: 200px;
   height: 350px;
   padding: 5px 15px;
-  transition-timing-function: ease; }
+  transition-timing-function: ease;
+  text-shadow: 0px 0px 2px white; }
   .cards .imgContainer {
     height: 120px;
     width: 100%;
@@ -315,14 +322,15 @@ header.smaller nav a {
   transition-timing-function: ease-in; }
 
 .cards:hover {
-  transform: translateY(-80px); }
+  transform: translateY(-65px); }
 
 .tradingPark {
   padding-bottom: 300px; }
 
 #backgroundTank {
   background-image: url("../img/background.jpg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  min-height: 700px; }
 
 .rowsOfCards {
   margin-top: 100px;
@@ -330,6 +338,21 @@ header.smaller nav a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: left; }
+
+input {
+  color: black;
+  width: 100%; }
+
+@media all and (max-width: 800px) {
+  .rowsOfCards {
+    justify-content: center; } }
+
+.signInPopUp {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  left: 200px;
+  top: 300px; }
 
 .carousel-inner.onebyone-carosel {
   margin: auto;
