@@ -91,7 +91,7 @@ a:hover {
   background: linear-gradient(to bottom, rgba(0,0,0,0) 1px,rgba(17,17,17,1) 600px,rgba(35,35,35,1) 900px,rgba(22,22,22,1) 99%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#161616',GradientType=0 );
   padding-top: 150px;
-  min-height: 700px; }
+  min-height: 700px;}
 
 .container {
   width: 80%;
@@ -146,7 +146,7 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: black;
+  background-color: RGBa(0, 0, 0, 0.5);
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
   -ms-transition: height 0.3s;
