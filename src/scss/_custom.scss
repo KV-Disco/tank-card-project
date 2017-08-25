@@ -92,10 +92,11 @@ input{
     }
 }
 
-.signInPopUpContainer{
-    width: 100%;
-    position: fixed;
-    top: 30%;
+// .signInPopUpContainer{
+//     width: 100%;
+//     position: fixed;
+//     top: 30%;
+//     // display: none;
     .signInPopUp{
         text-shadow: 1px 1px 3px gray;
         border-radius: 5px;
@@ -105,4 +106,41 @@ input{
         .control-group{
             padding:10px
         }
+}//}
+
+.logInDropdownButton{
+    background-color: transparent;
+    border: transparent;
+    .logInDropdown{
+        background-color: transparent;    }
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100px;
+    left: -150px;
+    z-index: 1000;
+    display: none;
+    float: right;
+    min-width: 350px;
+    padding: 0 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: transparent;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+@media all and (max-width: 900px) {
+    .dropdown-menu {
+        left: 0;
+        top: 70px;
+
 }}

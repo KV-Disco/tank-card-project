@@ -144,7 +144,6 @@ section.color {
 header {
   width: 100%;
   height: 100px;
-  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -159,7 +158,7 @@ header {
 
 header h1#logo {
   display: inline-block;
-  height: 100px;
+  height: 50px;
   line-height: 100px;
   float: left;
   font-family: "Oswald", sans-serif;
@@ -187,7 +186,7 @@ header nav {
   float: right; }
 
 header nav a {
-  line-height: 150px;
+  line-height: 100px;
   margin-left: 20px;
   color: #E9E2BF;
   font-weight: 700;
@@ -226,14 +225,16 @@ header.smaller nav a {
 
 /* =Media Queries
 -------------------------------------------------------------- */
-@media all and (max-width: 660px) {
+@media all and (max-width: 900px) {
   /* =Header
   -------------------------------------------------------------- */
+  header {
+    height: 120px; }
   header h1#logo {
     display: block;
     float: none;
     margin: 0 auto;
-    height: 100px;
+    height: 50px;
     line-height: 100px;
     text-align: center; }
   header nav {
@@ -243,7 +244,7 @@ header.smaller nav a {
     text-align: center;
     margin: 0 auto; }
   header nav a {
-    line-height: 50px;
+    line-height: 100px;
     margin: 0 10px; }
   header.smaller {
     height: 75px; }
@@ -347,18 +348,47 @@ input {
   .rowsOfCards {
     justify-content: center; } }
 
-.signInPopUpContainer {
-  width: 100%;
-  position: fixed;
-  top: 30%; }
-  .signInPopUpContainer .signInPopUp {
-    text-shadow: 1px 1px 3px gray;
-    border-radius: 5px;
-    background-color: black;
-    padding: 10px 20px;
-    border: 3px solid red; }
-    .signInPopUpContainer .signInPopUp .control-group {
-      padding: 10px; }
+.signInPopUp {
+  text-shadow: 1px 1px 3px gray;
+  border-radius: 5px;
+  background-color: black;
+  padding: 10px 20px;
+  border: 3px solid red; }
+  .signInPopUp .control-group {
+    padding: 10px; }
+
+.logInDropdownButton {
+  background-color: transparent;
+  border: transparent; }
+  .logInDropdownButton .logInDropdown {
+    background-color: transparent; }
+
+.dropdown-menu {
+  position: absolute;
+  top: 100px;
+  left: -150px;
+  z-index: 1000;
+  display: none;
+  float: right;
+  min-width: 350px;
+  padding: 0 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: transparent;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); }
+
+@media all and (max-width: 900px) {
+  .dropdown-menu {
+    left: 0;
+    top: 70px; } }
 
 .carousel-inner.onebyone-carosel {
   margin: auto;

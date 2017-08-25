@@ -18,8 +18,51 @@
                 <div class="container clearfix">
                     <h1 id="logo"><a href="/">TheCardsOf<span>KURSK</span></a></h1>
                     <nav>
-                        <a href="" class="signIn">Sign In</a>
-                        <a href="/registration.html">Sign Up</a>
+                        <!-- Dropdown -->
+                        <div class="dropdown">
+                            <a href="/registration.html">Sign Up</a>
+                            <a class="dropdown-toggle logInDropdownButon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Sign In
+                                <span class="caret"></span>
+                            </a>
+                            <div class="dropdown-menu logInDropdown" aria-labelledby="dropdownMenu1">
+                                <!-- LogIn -->
+                                <!-- <div class="signInPopUpContainer container"> -->
+                                    <div class="signInPopUp">
+                                        <form>
+                                            <fieldset>
+                                                <div id="legend">
+                                                    <h1 class="registration">LogIn</h1>
+                                                </div>
+                                                <div class="control-group">
+                                                    <!-- Username -->
+                                                    <label class="control-label" for="username">Username</label>
+                                                    <div class="controls">
+                                                        <input type="text" id="username" name="username" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <!-- Password-->
+                                                    <label class="control-label" for="password">Password</label>
+                                                    <div class="controls">
+                                                        <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <!-- Button -->
+                                                    <div class="controls">
+                                                        <button class="btn btn-success">Login</button>
+                                                        <a href="/user-page.html">Log in</a>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                <!-- </div> -->
+                                <!-- /LogIn -->
+                            </div>
+                        </div>
+                        <!-- /Dropdown -->
                     </nav>
                 </div>
             </header>
@@ -237,40 +280,6 @@
             <!-- #main -->
         </div>
         <!-- /#backgroundTank -->
-        <!-- LogIn -->
-            <div class="signInPopUpContainer hide container">
-                <div class="signInPopUp col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-                    <form>
-                        <fieldset>
-                            <div id="legend">
-                                <h1 class="registration">LogIn</h1>
-                            </div>
-                            <div class="control-group">
-                                <!-- Username -->
-                                <label class="control-label" for="username">Username</label>
-                                <div class="controls">
-                                    <input type="text" id="username" name="username" placeholder="">
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <!-- Password-->
-                                <label class="control-label" for="password">Password</label>
-                                <div class="controls">
-                                    <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <!-- Button -->
-                                <div class="controls">
-                                    <button class="btn btn-success">Login</button>
-                                    <a href="/user-page.html">Log in</a>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-            <!-- /LogIn -->
     </div>
     <!-- /#wrapper -->
     <!--JQuery -->

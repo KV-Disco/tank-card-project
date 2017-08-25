@@ -1,11 +1,13 @@
-$('.signIn').on('click', function (e) {
-  e.preventDefault()
-  console.log('well hello there')
-  $('.signInPopUpContainer').removeClass('hide')
-})
+// $('.signIn').on('click', function (e) {
+//   e.preventDefault()
+//   console.log('well hello there')
+//   $('.signInPopUpContainer').toggle()
+// })
 
-$('.signInPopUpContainer').on('mouseleave', function (e) {
-  e.preventDefault()
-  console.log('the art of lossing focus')
-  $(this).addClass('hide')
-})
+// $('.signInPopUp').on('mouseleave', function (e) {
+//   e.preventDefault()
+//   console.log('the art of lossing focus')
+//   $(document).on('click', function (e) {
+//     $('.signInPopUpContainer').toggle()
+//   })
+// })
