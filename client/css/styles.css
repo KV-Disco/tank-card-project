@@ -292,7 +292,6 @@ header.smaller nav a {
   .cards .imgContainer {
     height: 120px;
     width: 100%;
-    background-image: url("../img/Tiger-I.jpg");
     background-size: cover;
     background-position: center center; }
   .cards .tankDescription {
@@ -401,8 +400,7 @@ input {
   left: -24%; }
 
 .onebyone-carosel .active.right {
-  left: 24%;
-  background: yellow; }
+  left: 24%; }
 
 .onebyone-carosel .next {
   left: 25%; }
@@ -421,7 +419,9 @@ input {
   box-shadow: 3px -2px 5px 2px black;
   margin: 10px;
   width: 200px;
-  height: 350px; }
+  height: 350px;
+  transition-timing-function: ease;
+  text-shadow: 0px 0px 2px white; }
   .cardsCarrousel .imgContainer {
     height: 120px;
     width: 100%;
@@ -436,3 +436,11 @@ input {
       text-align: justify;
       text-justify: inter-word;
       font-size: 12px; }
+
+.cardsCarrousel {
+  transition-property: transform;
+  transition-duration: .2s;
+  transition-timing-function: ease-in; }
+
+.cardsCarrousel:hover {
+  transform: translateY(-65px); }

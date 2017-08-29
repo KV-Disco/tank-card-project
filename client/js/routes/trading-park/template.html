@@ -15,135 +15,15 @@
     <div class="container content">
         <h1>Trading Park</h1>
         <div class="rowsOfCards">
-            <div class="cards thumbnail">
+            <div class="cards thumbnail" ng-repeat="tank in tanks">
                 <div class="caption">
-                    <h3>Tiger I</h3>
+                    <h3>{{tank.name}}</h3>
                 </div>
-                <div class="imgContainer">
+                <div class="imgContainer" ng-style="{'background-image':'url({{tank.img}})'}">
+                    <!-- <img  style="width:100%"> -->
                 </div>
                 <div class="caption tankDescription multiline-ellipsis">
-                    <p>The Tiger I About this sound listen (help·info) was a German heavy tank of World War II deployed from 1942 in Africa and Europe usually in independent heavy tank battalions. Its final designation was Panzerkampfwagen VI Tiger Ausf. E often shortened to Tiger. The Tiger I gave the Wehrmacht its first armoured fighting vehicle that mounted the 8.8 cm KwK 36 gun (not to be confused with the 8.8 cm Flak 36). 1,347 were built between August 1942 and August 1944.[9] After August 1944, production of the Tiger I was phased out in favour of the Tiger II.
-                    </p>
-                </div>
-            </div>
-            <div class="cards thumbnail">
-                <div class="caption">
-                    <h3>Tiger I</h3>
-                </div>
-                <div class="imgContainer">
-                </div>
-                <div class="caption tankDescription">
-                    <p>The Tiger I About this sound listen (help·info) was a German heavy tank of World War II deployed from 1942 in Africa and Europe usually in independent heavy tank battalions. Its final designation was Panzerkampfwagen VI Tiger Ausf. E often shortened to Tiger. The Tiger I gave the Wehrmacht its first armoured fighting vehicle that mounted the 8.8 cm KwK 36 gun (not to be confused with the 8.8 cm Flak 36). 1,347 were built between August 1942 and August 1944.[9] After August 1944, production of the Tiger I was phased out in favour of the Tiger II.
-                    </p>
-                </div>
-            </div>
-            <div class="cards thumbnail">
-                <div class="caption">
-                    <h3>Tiger I</h3>
-                </div>
-                <div class="imgContainer">
-                </div>
-                <div class="caption tankDescription">
-                    <p>The Tiger I About this sound listen (help·info) was a German heavy tank of World War II deployed from 1942 in Africa and Europe usually in independent heavy tank battalions. Its final designation was Panzerkampfwagen VI Tiger Ausf. E often shortened to Tiger. The Tiger I gave the Wehrmacht its first armoured fighting vehicle that mounted the 8.8 cm KwK 36 gun (not to be confused with the 8.8 cm Flak 36). 1,347 were built between August 1942 and August 1944.[9] After August 1944, production of the Tiger I was phased out in favour of the Tiger II.
-                    </p>
-                </div>
-            </div>
-            <div class="cards thumbnail">
-                <div class="caption">
-                    <h3>Tiger I</h3>
-                </div>
-                <div class="imgContainer">
-                </div>
-                <div class="caption tankDescription">
-                    <p>The Tiger I About this sound listen (help·info) was a German heavy tank of World War II deployed from 1942 in Africa and Europe usually in independent heavy tank battalions. Its final designation was Panzerkampfwagen VI Tiger Ausf. E often shortened to Tiger. The Tiger I gave the Wehrmacht its first armoured fighting vehicle that mounted the 8.8 cm KwK 36 gun (not to be confused with the 8.8 cm Flak 36). 1,347 were built between August 1942 and August 1944.[9] After August 1944, production of the Tiger I was phased out in favour of the Tiger II.
-                    </p>
-                </div>
-            </div>
-            <div class="cards thumbnail">
-                <div class="caption">
-                    <h3>Tiger I</h3>
-                </div>
-                <div class="imgContainer">
-                </div>
-                <div class="caption tankDescription">
-                    <p>The Tiger I About this sound listen (help·info) was a German heavy tank of World War II deployed from 1942 in Africa and Europe usually in independent heavy tank battalions. Its final designation was Panzerkampfwagen VI Tiger Ausf. E often shortened to Tiger. The Tiger I gave the Wehrmacht its first armoured fighting vehicle that mounted the 8.8 cm KwK 36 gun (not to be confused with the 8.8 cm Flak 36). 1,347 were built between August 1942 and August 1944.[9] After August 1944, production of the Tiger I was phased out in favour of the Tiger II.
-                    </p>
-                </div>
-            </div>
-            <div class="cards thumbnail">
-                <div class="caption">
-                    <h3>Tiger I</h3>
-                </div>
-                <div class="imgContainer">
-                </div>
-                <div class="caption tankDescription">
-                    <p>The Tiger I About this sound listen (help·info) was a German heavy tank of World War II deployed from 1942 in Africa and Europe usually in independent heavy tank battalions. Its final designation was Panzerkampfwagen VI Tiger Ausf. E often shortened to Tiger. The Tiger I gave the Wehrmacht its first armoured fighting vehicle that mounted the 8.8 cm KwK 36 gun (not to be confused with the 8.8 cm Flak 36). 1,347 were built between August 1942 and August 1944.[9] After August 1944, production of the Tiger I was phased out in favour of the Tiger II.
-                    </p>
-                </div>
-            </div>
-            <div class="cards thumbnail">
-                <div class="caption">
-                    <h3>Tiger I</h3>
-                </div>
-                <div class="imgContainer">
-                </div>
-                <div class="caption tankDescription">
-                    <p>The Tiger I About this sound listen (help·info) was a German heavy tank of World War II deployed from 1942 in Africa and Europe usually in independent heavy tank battalions. Its final designation was Panzerkampfwagen VI Tiger Ausf. E often shortened to Tiger. The Tiger I gave the Wehrmacht its first armoured fighting vehicle that mounted the 8.8 cm KwK 36 gun (not to be confused with the 8.8 cm Flak 36). 1,347 were built between August 1942 and August 1944.[9] After August 1944, production of the Tiger I was phased out in favour of the Tiger II.
-                    </p>
-                </div>
-            </div>
-            <div class="cards thumbnail">
-                <div class="caption">
-                    <h3>Tiger I</h3>
-                </div>
-                <div class="imgContainer">
-                </div>
-                <div class="caption tankDescription">
-                    <p>The Tiger I About this sound listen (help·info) was a German heavy tank of World War II deployed from 1942 in Africa and Europe usually in independent heavy tank battalions. Its final designation was Panzerkampfwagen VI Tiger Ausf. E often shortened to Tiger. The Tiger I gave the Wehrmacht its first armoured fighting vehicle that mounted the 8.8 cm KwK 36 gun (not to be confused with the 8.8 cm Flak 36). 1,347 were built between August 1942 and August 1944.[9] After August 1944, production of the Tiger I was phased out in favour of the Tiger II.
-                    </p>
-                </div>
-            </div>
-            <div class="cards thumbnail">
-                <div class="caption">
-                    <h3>Tiger I</h3>
-                </div>
-                <div class="imgContainer">
-                </div>
-                <div class="caption tankDescription">
-                    <p>The Tiger I About this sound listen (help·info) was a German heavy tank of World War II deployed from 1942 in Africa and Europe usually in independent heavy tank battalions. Its final designation was Panzerkampfwagen VI Tiger Ausf. E often shortened to Tiger. The Tiger I gave the Wehrmacht its first armoured fighting vehicle that mounted the 8.8 cm KwK 36 gun (not to be confused with the 8.8 cm Flak 36). 1,347 were built between August 1942 and August 1944.[9] After August 1944, production of the Tiger I was phased out in favour of the Tiger II.
-                    </p>
-                </div>
-            </div>
-            <div class="cards thumbnail">
-                <div class="caption">
-                    <h3>Tiger I</h3>
-                </div>
-                <div class="imgContainer">
-                </div>
-                <div class="caption tankDescription">
-                    <p>The Tiger I About this sound listen (help·info) was a German heavy tank of World War II deployed from 1942 in Africa and Europe usually in independent heavy tank battalions. Its final designation was Panzerkampfwagen VI Tiger Ausf. E often shortened to Tiger. The Tiger I gave the Wehrmacht its first armoured fighting vehicle that mounted the 8.8 cm KwK 36 gun (not to be confused with the 8.8 cm Flak 36). 1,347 were built between August 1942 and August 1944.[9] After August 1944, production of the Tiger I was phased out in favour of the Tiger II.
-                    </p>
-                </div>
-            </div>
-            <div class="cards thumbnail">
-                <div class="caption">
-                    <h3>Tiger I</h3>
-                </div>
-                <div class="imgContainer">
-                </div>
-                <div class="caption tankDescription">
-                    <p>The Tiger I About this sound listen (help·info) was a German heavy tank of World War II deployed from 1942 in Africa and Europe usually in independent heavy tank battalions. Its final designation was Panzerkampfwagen VI Tiger Ausf. E often shortened to Tiger. The Tiger I gave the Wehrmacht its first armoured fighting vehicle that mounted the 8.8 cm KwK 36 gun (not to be confused with the 8.8 cm Flak 36). 1,347 were built between August 1942 and August 1944.[9] After August 1944, production of the Tiger I was phased out in favour of the Tiger II.
-                    </p>
-                </div>
-            </div>
-            <div class="cards thumbnail">
-                <div class="caption">
-                    <h3>Tiger I</h3>
-                </div>
-                <div class="imgContainer">
-                </div>
-                <div class="caption tankDescription multiline-ellipsis">
-                    <p>The Tiger I About this sound listen (help·info) was a German heavy tank of World War II deployed from 1942 in Africa and Europe usually in independent heavy tank battalions. Its final designation was Panzerkampfwagen VI Tiger Ausf. E often shortened to Tiger. The Tiger I gave the Wehrmacht its first armoured fighting vehicle that mounted the 8.8 cm KwK 36 gun (not to be confused with the 8.8 cm Flak 36). 1,347 were built between August 1942 and August 1944.[9] After August 1944, production of the Tiger I was phased out in favour of the Tiger II.
+                    <p>{{tank.description}}
                     </p>
                 </div>
             </div>

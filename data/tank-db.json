@@ -1,0 +1,34 @@
+{
+	"tanks":{
+		"1":{
+			"name": "Tiger I",
+			"img": "../img/Tiger-I.jpg",
+			"description": "The Tiger I About this sound listen (help·info) was a German heavy tank of World War II deployed from 1942 in Africa and Europe usually in independent heavy tank battalions. Its final designation was Panzerkampfwagen VI Tiger Ausf. E often shortened to Tiger. The Tiger I gave the Wehrmacht its first armoured fighting vehicle that mounted the 8.8 cm KwK 36 gun (not to be confused with the 8.8 cm Flak 36). 1,347 were built between August 1942 and August 1944.[9] After August 1944, production of the Tiger I was phased out in favour of the Tiger II."
+		},
+		"2":{
+			"name": "T-34",
+			"img": "../img/t34.png",
+			"description": "The T-34 is a Soviet medium tank that had a profound and lasting effect on the field of tank design. At its introduction, the T-34 possessed an unprecedented combination of firepower, mobility, protection and ruggedness. Its 76.2 mm (3 in) high-velocity tank gun provided a substantial increase in firepower over any of its contemporaries;[5] its well- sloped armour was difficult to penetrate by most contemporary anti-tank weapons. When first encountered in 1941, the German tank general von Kleist called it 'the finest tank in the world'[6] and Heinz Guderian affirmed the T-34's 'vast superiority' over existing German armour of the period.[7][8] Although its armour and armament were surpassed later in the war, it has often been credited as the most effective, efficient and influential tank design of the Second World War.["
+		},
+		"3":{
+			"name": "Tiger II",
+			"img": "../img/tiger-ii.png",
+			"description": "Tiger II is the common name of a German heavy tank of the Second World War. The final official German designation was Panzerkampfwagen Tiger Ausf. B,[notes 1] often shortened to Tiger B.[6] The ordnance inventory designation was Sd.Kfz. 182.[6] It is also known under the informal name Königstiger[6] (the German name for the Bengal tiger), often translated literally as Royal Tiger, or somewhat incorrectly as King Tiger by Allied soldiers, especially by American forces."
+		},
+		"4":{
+			"name": "KV-2",
+			"img": "http://wiki.gcdn.co/images/thumb/c/ce/Preserved_KV-2_at_the_Central_Museum_of_Russian_Armed_Forces%2C_Moscow.jpg/267px-Preserved_KV-2_at_the_Central_Museum_of_Russian_Armed_Forces%2C_Moscow.jpg",
+			"description": "El KV-2, acrónimo de Kliment Voroshilov 2 (en ruso: Климент Ворошилов 2), fue un tanque pesado soviético destinado a funcionar como artillería autopropulsada. La designación KV fue el nombre oficial de la serie de tanques pesados soviéticos desarrollados entre 1940 y 1943, llamados así por el héroe de la Guerra Civil Rusa, el líder militar y político Kliment Efremovich Voroshílov (Ворошилова Климента Ефремовича)."
+		},
+		"5":{
+			"name": "Pz. 4",
+			"img": "https://i.ytimg.com/vi/by-rCG1s6Vo/maxresdefault.jpg",
+			"description": "The Panzerkampfwagen IV (PzKpfw IV), commonly known as the Panzer IV, was a German medium tank developed in the late 1930s and used extensively during the Second World War. Its ordnance inventory designation was Sd.Kfz. 161. The Panzer IV was the most widely manufactured German tank of the Second World War, with some 8,500 built. The Panzer IV was used as the base for many other fighting vehicles, including the Sturmgeschütz IV assault gun, Jagdpanzer IV tank destroyer, the Wirbelwind self-propelled anti-aircraft gun, and the Brummbär self-propelled gun."
+		},
+		"6":{
+			"name": "Sherman M4",
+			"img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/M4_Sherman_tank_-_Flickr_-_Joost_J._Bakker_IJmuiden.jpg/300px-M4_Sherman_tank_-_Flickr_-_Joost_J._Bakker_IJmuiden.jpg",
+			"description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+		}}
+
+}
