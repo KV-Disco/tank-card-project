@@ -1,9 +1,8 @@
 /* global Schema */
 const mongoose = require('mongoose')
-const collection = 'UsersCards'
 const ObjectId = mongoose.Schema.Types.ObjectId
 
-var usersCardsSchema = new mongoose.Schema({
+var userCardSchema = new mongoose.Schema({
   user: {
     type: ObjectId,
     required: true
@@ -16,6 +15,6 @@ var usersCardsSchema = new mongoose.Schema({
     type: Boolean,
     default: false
   }
-}, { collection })
+}, { collection:'user_cards' })
 
-module.exports = mongoose.model('UsersCards', usersCardsSchema)
+module.exports = mongoose.model('UserCard', userCardSchema)

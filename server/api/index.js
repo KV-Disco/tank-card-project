@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-const userCards = require('./tanks/userCards')
+const allTrading = require('./cards/allTrading')
 
-router.get('/cards', userCards)
+router.get('/cards', allTrading)
 
 module.exports = router
