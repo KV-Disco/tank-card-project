@@ -1,20 +1,24 @@
 const express = require('express')
+const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
 const path = require('path')
 
 const app = express()
+const urlDb = process.env.URL_DB || 'mongodb://localhost:27017/cardsOfKurks'
 const PORT = process.env.PORT || 3001
 
-const tanksData = require('./../data/tank-db.json')
-const user1Data = require('./../data/user1.json')
-const user2Data = require('./../data/user2.json')
+mongoose.Promise = global.Promise
+mongoose.connect(urlDb, {useMongoClient: true})
+
+const routeTANKS = require('./routes')
 
 const pathClient = path.join(__dirname, '../client')
-console.log(pathClient)
 app.use(express.static(pathClient))
 
-app.get('/data', (req, res) => res.send(tanksData))
-app.get('/data/user/1', (req, res) => res.send(user1Data))
-app.get('/data/user/2', (req, res) => res.send(user2Data))
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+
+app.use('/api', routeTANKS)
 
 app.listen(PORT)
 console.log(`Dude PORT ${PORT} is listening.... be scare.....`)
