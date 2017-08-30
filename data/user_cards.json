@@ -1,0 +1,31 @@
+[
+{
+    "user": ObjectId("59a6983c7300a9c6dab14f03"),
+    "card": ObjectId("59a690247300a9c6dab14ef1"),
+    "trading": false
+},
+{
+    "user": ObjectId("59a690247300a9c6dab14eee"),
+    "card": ObjectId("59a690247300a9c6dab14ef1"),
+    "trading": true
+},
+{
+    "user": ObjectId("59a6983c7300a9c6dab14f03"),
+    "card": ObjectId("59a690247300a9c6dab14ef1"),
+    "trading": true
+},
+{
+    "user": ObjectId("59a6983c7300a9c6dab14f03"),
+    "card": ObjectId("59a690247300a9c6dab14ef1"),
+    "trading": true
+},
+{
+    "user": ObjectId("59a6983c7300a9c6dab14f03"),
+    "card": ObjectId("59a690247300a9c6dab14ef1"),
+    "trading": true
+},
+{
+    "user": ObjectId("59a6983c7300a9c6dab14f03"),
+    "card": ObjectId("59a690247300a9c6dab14ef1"),
+    "trading": false
+}]

@@ -2,9 +2,10 @@ const TankCards = require('../../models/tankCards')
 const UserCards = require('../../models/UserCards')
 const Users = require('../../models/Users')
 
-function getCards (req, res) {
+function allTradingCards (req, res) {
   UserCards.find({trading: true})
-    .then(cards => console.log(cards))
+    .then(cards => res.send(cards))
+    .catch(err => res.send(err))
 }
 
-module.exports = getCards
+module.exports = allTradingCards
