@@ -414,33 +414,34 @@ input {
   .carouselContainer h2 {
     font-weight: bold; }
 
-.cardsCarrousel {
+.cardsUsers {
   border: 5px solid;
   box-shadow: 3px -2px 5px 2px black;
+  position: relative;
   margin: 10px;
   width: 200px;
   height: 350px;
+  padding: 5px 15px;
   transition-timing-function: ease;
   text-shadow: 0px 0px 2px white; }
-  .cardsCarrousel .imgContainer {
+  .cardsUsers .imgContainer {
     height: 120px;
     width: 100%;
-    background-image: url("../img/Tiger-I.jpg");
     background-size: cover;
     background-position: center center; }
-  .cardsCarrousel .tankDescription {
+  .cardsUsers .tankDescription {
     height: 155px;
     overflow: fade(5%);
     overflow: hidden; }
-    .cardsCarrousel .tankDescription p {
+    .cardsUsers .tankDescription p {
       text-align: justify;
       text-justify: inter-word;
       font-size: 12px; }
 
-.cardsCarrousel {
+.cardsUsers {
   transition-property: transform;
   transition-duration: .2s;
   transition-timing-function: ease-in; }
 
-.cardsCarrousel:hover {
+.cardsUsers:hover {
   transform: translateY(-65px); }
