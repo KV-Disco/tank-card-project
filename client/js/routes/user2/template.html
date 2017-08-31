@@ -13,18 +13,17 @@
     <div class="container carouselContainer">
         <h2>Your Tank Collection</h2></div>
     <div class="container carouselContainer">
-            <div class="rowsOfCards">
-                <div class="cardsUsers thumbnail" ng-repeat="tank in tanks">
-                    <div class="caption">
-                        <h3>{{tank.name}}</h3>
-                    </div>
-                    <div class="imgContainer" ng-style="{'background-image':'url({{tank.img}})'}">
-                        <!-- <img  style="width:100%"> -->
-                    </div>
-                    <div class="caption tankDescription multiline-ellipsis">
-                        <p>{{tank.description}}
-                        </p>
-                    </div>
-                </div>
-            </div>     
-    </section>
+    <div class="rowsOfCards">
+        <div class="cardsUsers thumbnail" ng-repeat="tank in tanks">
+            <div class="caption">
+                <h3>{{tank.card.name}}</h3>
+            </div>
+            <div class="imgContainer" ng-style="{'background-image':'url({{tank.card.img}})'}">
+                <!-- <img  style="width:100%"> -->
+            </div>
+            <div class="caption tankDescription multiline-ellipsis">
+                <p>{{tank.card.description}}</p>
+            </div>
+        </div>
+    </div>     
+</section>

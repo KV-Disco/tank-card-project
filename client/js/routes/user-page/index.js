@@ -3,7 +3,7 @@
 angular.module('TANKapp')
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/user', {
+      .when('/user1', {
         templateUrl: 'js/routes/user-page/template.html',
         controller: 'userController'
       })

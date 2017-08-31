@@ -2,9 +2,10 @@
 
 angular.module('TANKapp')
   .controller('user2Controller', function ($scope, $rootScope, tankService) {
-  	tankService.getUser2Tanks()
+  	tankService.getUser2()
   		.then(function (res) {
-  			$scope.tanks = res.data.tanks
+  			console.log(res.data)
+  			$scope.tanks = res.data
   		})
   })
   

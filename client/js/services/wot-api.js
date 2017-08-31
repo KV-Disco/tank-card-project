@@ -11,8 +11,22 @@
           return $http.get(url)
         }
 
+        function getUser1 () {
+          const url = '/api/user1'
+          console.log(url)
+          return $http.get(url)
+        }
+
+        function getUser2 () {
+          const url = '/api/user2'
+          console.log(url)
+          return $http.get(url)
+        }
+
         return {
-          getCards: getCards
+          getCards: getCards,
+          getUser1: getUser1,
+          getUser2: getUser2
         }
       })
 })()
