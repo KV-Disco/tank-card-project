@@ -1,8 +1,18 @@
 [
 {
     "user": ObjectId("59a6983c7300a9c6dab14f03"),
-    "card": ObjectId("59a690247300a9c6dab14ef1"),
+    "card": ObjectId("59a6d6457300a9c6dab1520e"),
     "trading": false
+},
+{
+    "user": ObjectId("59a6983c7300a9c6dab14f03"),
+    "card": ObjectId("59a6d6457300a9c6dab1520f"),
+    "trading": true
+},
+{
+    "user": ObjectId("59a6983c7300a9c6dab14f03"),
+    "card": ObjectId("59a6d6457300a9c6dab15210"),
+    "trading": true
 },
 {
     "user": ObjectId("59a690247300a9c6dab14eee"),
@@ -10,22 +20,12 @@
     "trading": true
 },
 {
-    "user": ObjectId("59a6983c7300a9c6dab14f03"),
-    "card": ObjectId("59a690247300a9c6dab14ef1"),
+    "user": ObjectId("59a690247300a9c6dab14eee"),
+    "card": ObjectId("59a6d6457300a9c6dab1520f"),
     "trading": true
 },
 {
-    "user": ObjectId("59a6983c7300a9c6dab14f03"),
-    "card": ObjectId("59a690247300a9c6dab14ef1"),
-    "trading": true
-},
-{
-    "user": ObjectId("59a6983c7300a9c6dab14f03"),
-    "card": ObjectId("59a690247300a9c6dab14ef1"),
-    "trading": true
-},
-{
-    "user": ObjectId("59a6983c7300a9c6dab14f03"),
+    "user": ObjectId("59a690247300a9c6dab14eee"),
     "card": ObjectId("59a690247300a9c6dab14ef1"),
     "trading": false
 }]
