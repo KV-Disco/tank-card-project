@@ -3,7 +3,7 @@
 (function () {
   angular.module('cardsOfKurskApp')
       .factory('cardService', function ($http) {
-        function getCards () {
+        function getTradingCards () {
           const url = '/api/trading-cards'
           console.log(url)
           return $http.get(url)
@@ -21,16 +21,23 @@
           return $http.get(url)
         }
 
-        function doTrade (cardId, userId) {
-          const url = '/api/trade/' + cardId // + '/' + userId
-          return $http.put(url)
+        function pushToTrade (userCardId) {
+          // TODO
+          // const url = '/api/trade/' + userCardId
+          // return $http.put(url)
+        }
+
+        function pickFromTrade(userCardId, userId) {
+          console.log('pickFromTrade', userCardId, userId)
+          // TODO call api for updating user-card, etc...
         }
 
         return {
-          getCards: getCards,
+          getTradingCards: getTradingCards,
           getUser1: getUser1,
           getUser2: getUser2,
-          doTrade: doTrade
+          pushToTrade: pushToTrade,
+          pickFromTrade: pickFromTrade
         }
       })
 })()

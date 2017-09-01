@@ -9,8 +9,8 @@ angular.module('cardsOfKurskApp')
   		})
 
 
-  		$scope.trade = function (userCardId) {
-  			cardService.doTrade(userCardId)
+  		$scope.pushToTrade = function (userCardId) {
+  			cardService.pushToTrade(userCardId)
   		}
   })
   

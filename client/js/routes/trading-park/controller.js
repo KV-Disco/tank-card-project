@@ -1,10 +1,16 @@
 /* global angular */
 angular.module('cardsOfKurskApp')
-  .controller('tradingController', function ($scope, $rootScope, cardService) {
-  	cardService.getCards()
+  .controller('tradingController', function ($scope, $rootScope, cardService, userService) {
+  	cardService.getTradingCards()
   		.then(function (res) {
-  			console.log(res.data)
   			$scope.userCards = res.data
   		})
+
+
+  	$scope.pickFromTrade = function(userCardId) {
+  		const userId = userService.getUser().id
+
+  		cardService.pickFromTrade(userCardId, userId)
+  	}
   })
   
