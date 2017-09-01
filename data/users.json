@@ -1,14 +1,1 @@
-[{
-	"_id": ObjectId("59a6983c7300a9c6dab14f03"),
-	"name": "Humberto",
-	"username": "KV-Disco",
-	"password": "1234",
- 	"email": "humbertoacea@gmail.com"
-},
-{
-	"_id": ObjectId("59a690247300a9c6dab14eee"),
-	"name": "Roberto",
-	"username": "hellgo",
-	"password": "1234",
- 	"email": "efeponte@gmail.com"
-}]
+[{"_id":{"$oid":"59a6983c7300a9c6dab14f03"},"name":"Humberto","username":"KV-Disco","password":"1234","email":"humbertoacea@gmail.com"},{"_id":{"$oid":"59a690247300a9c6dab14eee"},"name":"Roberto","username":"hellgo","password":"1234","email":"efeponte@gmail.com"}]
