@@ -23,10 +23,16 @@
           return $http.get(url)
         }
 
+        function doTrade (cardId, userId) {
+          const url = '/api/trade/' + cardId // + '/' + userId
+          return $http.put(url)
+        }
+
         return {
           getCards: getCards,
           getUser1: getUser1,
-          getUser2: getUser2
+          getUser2: getUser2,
+          doTrade: doTrade
         }
       })
 })()

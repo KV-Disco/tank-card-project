@@ -7,5 +7,18 @@ angular.module('TANKapp')
   			console.log(res.data)
   			$scope.tanks = res.data
   		})
+
+
+  		$scope.trade = function (id) {
+  			console.log("hello")
+  			// console.log(id)
+  			const cardId = id
+
+  			// cardId = id
+
+  			console.log(cardId)
+
+  			tankService.doTrade(cardId) // .../cards
+  		}
   })
   
