@@ -1,24 +1,16 @@
 /* global angular */
 
-angular.module('TANKapp')
-  .controller('userController', function ($scope, $rootScope, tankService) {
-  	tankService.getUser1()
+angular.module('cardsOfKurskApp')
+  .controller('userController', function ($scope, $rootScope, cardService) {
+  	cardService.getUser1()
   		.then(function (res) {
   			console.log(res.data)
   			$scope.tanks = res.data
   		})
 
 
-  		$scope.trade = function (id) {
-  			console.log("hello")
-  			// console.log(id)
-  			const cardId = id
-
-  			// cardId = id
-
-  			console.log(cardId)
-
-  			tankService.doTrade(cardId) // .../cards
+  		$scope.trade = function (userCardId) {
+  			cardService.doTrade(userCardId)
   		}
   })
   

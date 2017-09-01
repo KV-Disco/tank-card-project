@@ -1,3 +1,3 @@
 /* global angular */
 
-angular.module('TANKapp', ['ngRoute'])
+angular.module('cardsOfKurskApp', ['ngRoute'])

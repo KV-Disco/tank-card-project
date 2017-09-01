@@ -1,6 +1,6 @@
 /* global angular */
 
-angular.module('TANKapp')
+angular.module('cardsOfKurskApp')
   .config(function($routeProvider) {
     $routeProvider
       .when('/', {

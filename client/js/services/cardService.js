@@ -1,12 +1,10 @@
 /* global angular */
 
 (function () {
-  const cardsForTrading = '/api/trading-cards'
-
-  angular.module('TANKapp')
-      .factory('tankService', function ($http) {
+  angular.module('cardsOfKurskApp')
+      .factory('cardService', function ($http) {
         function getCards () {
-          const url = cardsForTrading
+          const url = '/api/trading-cards'
           console.log(url)
           return $http.get(url)
         }
