@@ -5,19 +5,16 @@
       .factory('cardService', function ($http) {
         function getTradingCards () {
           const url = '/api/trading-cards'
-          console.log(url)
           return $http.get(url)
         }
 
         function getUser1 () {
           const url = '/api/user1'
-          console.log(url)
           return $http.get(url)
         }
 
         function getUser2 () {
           const url = '/api/user2'
-          console.log(url)
           return $http.get(url)
         }
 
@@ -27,8 +24,10 @@
           // return $http.put(url)
         }
 
-        function pickFromTrade(userCardId, userId) {
+        function pickFromTrade (userCardId, userId) {
           console.log('pickFromTrade', userCardId, userId)
+          const url = '/api/trade/pick/' + userCardId + '&' + userId
+          return $http.put(url)
           // TODO call api for updating user-card, etc...
         }
 

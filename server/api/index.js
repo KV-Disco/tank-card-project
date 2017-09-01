@@ -12,7 +12,7 @@ const allUser2Cards = require('./cards/allUser2')
 router.get('/trading-cards', allTradingCards)
 router.get('/cards', allCards)
 router.get('/user1', allUserCards)
-router.put('/trade/:cardId', makeTrade)
+router.put('/trade/pick/:userCardId&:userId', makeTrade)
 
 router.get('/user2', allUser2Cards)
 // router.get('/user/:username', userInformation)
