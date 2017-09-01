@@ -4,7 +4,7 @@ angular.module('TANKapp')
   	tankService.getCards()
   		.then(function (res) {
   			console.log(res.data)
-  			$scope.tanks = res.data
+  			$scope.userCards = res.data
   		})
   })
   
