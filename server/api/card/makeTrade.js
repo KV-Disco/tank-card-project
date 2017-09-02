@@ -2,8 +2,7 @@ const UserCard = require('../../models/UserCard')
 
 function makeTrade (req, res) {
   const {userCardId, userId} = req.params
-  console.log(userCardId)
-  console.log(userId)
+
   UserCard.findByIdAndUpdate(userCardId, {user: userId, trading: false})
     .then(cards => res.json(cards))
     .catch(err => res.send(err))

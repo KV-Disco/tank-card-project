@@ -20,8 +20,8 @@
 
         function pushToTrade (userCardId) {
           // TODO
-          // const url = '/api/trade/' + userCardId
-          // return $http.put(url)
+          const url = '/api/trade/push/' + userCardId
+          return $http.put(url)
         }
 
         function pickFromTrade (userCardId, userId) {

@@ -10,6 +10,7 @@ angular.module('cardsOfKurskApp')
 
 
   		$scope.pushToTrade = function (userCardId) {
+        console.log(userCardId)
   			cardService.pushToTrade(userCardId)
   		}
   })
