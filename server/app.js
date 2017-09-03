@@ -1,6 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
+const cookieSession = require('cookie-session')
 const path = require('path')
 
 const app = express()
@@ -15,6 +16,11 @@ app.use(express.static(pathClient))
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
+
+app.use(cookieSession({
+  name: 'CookieOfCardsOfKursk',
+  keys: ['hipopotomonstrosesquipedaliofobia', 'supercalifragilisticoespialidoso']
+}))
 
 app.use('/api', require('./api'))
 

@@ -14,10 +14,10 @@
     <div id="wrapper">
         <div id="backgroundTank">
             <!-- header -->
-            <header>
+            <header ng-controller="headerController">
                 <div class="container clearfix">
                     <h1 id="logo"><a href="/">TheCardsOf<span>KURSK</span></a></h1>
-                    <nav>
+                    <nav ng-if="!userInfo._id">
                         <!-- Dropdown -->
                         <div class="dropdown">
                             <a href="#!/registration">Sign Up</a>
@@ -38,21 +38,21 @@
                                                     <!-- Username -->
                                                     <label class="control-label" for="username">Username</label>
                                                     <div class="controls">
-                                                        <input type="text" id="username" name="username" placeholder="">
+                                                        <input type="text" id="username" ng-model="user.username" placeholder="Username">
                                                     </div>
                                                 </div>
                                                 <div class="control-group">
                                                     <!-- Password-->
                                                     <label class="control-label" for="password">Password</label>
                                                     <div class="controls">
-                                                        <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+                                                        <input type="password" id="password" ng-model="user.password" name="password" placeholder="Password" class="input-xlarge">
                                                     </div>
                                                 </div>
                                                 <div class="control-group">
                                                     <!-- Button -->
                                                     <div class="controls">
-                                                        <button class="btn btn-success">Login</button>
-                                                        <a href="#!/user">Log in</a>
+                                                        <imput type="submit" ng-click="check(user)" value="Check" class="btn btn-success">Login</imput>
+                                                        <a href="#!/user1">Log in</a>
                                                     </div>
                                                 </div>
                                             </fieldset>
@@ -63,6 +63,10 @@
                             </div>
                         </div>
                         <!-- /Dropdown -->
+                    </nav>
+                    <nav ng-if="userInfo._id">
+                        <!-- <a>Trading points: 10</a> -->
+                        <a href="/#!/user/{{userInfo.username}}">{{userInfo.username}}</a>
                     </nav>
                 </div>
             </header>
@@ -90,6 +94,8 @@
     <script src="js\services\cardService.js"></script>
     <script src="js\services\userService.js"></script>
     <!-- Routes -->
+    <!-- header controller -->
+    <script src="js\routes\header\controller.js"></script>
     <!-- trading-park -->
     <script src="js\routes\trading-park\index.js"></script>
     <script src="js\routes\trading-park\controller.js"></script>
@@ -105,8 +111,6 @@
     <!-- jQuerys -->
     <!-- Header JS -->
     <script src="js\jquery\header.js"></script>
-    <!-- Carrousel -->
-    <script src="js\jquery\carrousel-user-page.js"></script>
 </body>
 
 </html>

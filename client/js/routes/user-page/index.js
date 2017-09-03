@@ -3,7 +3,7 @@
 angular.module('cardsOfKurskApp')
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/user1', {
+      .when('/user/:username', {
         templateUrl: 'js/routes/user-page/template.html',
         controller: 'userController'
       })
