@@ -13,7 +13,7 @@ angular.module('cardsOfKurskApp')
   			           toastr.refreshTimer(toast, 1000);
   			  	}
   			  	else{
-
+  			  		$window.location.reload()
   			  	}
   		})
   	}
