@@ -8,9 +8,12 @@ angular.module('cardsOfKurskApp')
   		userService.newUser(username, password)
   			.then(res => {
   				if (res.data){	
-  			           var toast = toastr.warning('This user already exist.');
+  			           var toast = toastr.warning('Eather this user already exist or your password is to short.');
   			
   			           toastr.refreshTimer(toast, 1000);
+  			  	}
+  			  	else{
+
   			  	}
   		})
   	}
