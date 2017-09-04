@@ -6,6 +6,8 @@ angular.module('cardsOfKurskApp')
         $scope.userCards = res.data
       })
 
+      // socket.on('updateNow', )
+
     $scope.isUserCard = function(sessionId, userCardId) {
       console.log(sessionId)
       console.log(userCardId)
@@ -22,7 +24,12 @@ angular.module('cardsOfKurskApp')
         const newUserId = res.data
         if(newUserId !== oldUserId){
           console.log(newUserId)
-          cardService.pickFromTrade(userCardId, newUserId, oldUserId)
+          cardService.pickFromTrade(userCardId, newUserId, oldUserId).then(
+            cardService.getTradingCards()
+            .then(function (res) {
+              $scope.userCards = res.data
+            // socket.emit('updateAll')
+            }))
         }
         else{
            var toast = toastr.warning('You are trying to get card that you yourself push.');
