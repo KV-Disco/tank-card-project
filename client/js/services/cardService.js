@@ -19,9 +19,9 @@
           return $http.put(url)
         }
 
-        function pickFromTrade (userCardId, userId) {
-          console.log('pickFromTrade', userCardId, userId)
-          const url = '/api/trade/pick/' + userCardId + '&' + userId
+        function pickFromTrade (userCardId, newUserId, oldUser) {
+          console.log('pickFromTrade', userCardId, newUserId, oldUser)
+          const url = '/api/trade/pick/' + userCardId + '&' + newUserId + '&' + oldUser
           return $http.put(url)
           // TODO call api for updating user-card, etc...
         }

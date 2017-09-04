@@ -1,17 +1,27 @@
 const UserCard = require('../../models/UserCard')
 
 function makeTrade (req, res) {
-  const {userCardId, userId} = req.params
+  const {userCardId, newUserId, oldUserId} = req.params
 
   console.log(req.session.id)
 
-  // UserCard.findByIdAndUpdate(userCardId, {user: userId, trading: false})
-  //   .then(cards => res.json(cards))
-  //   .catch(err => res.send(err))
-
-  UserCard.find({user: userId, trading: true})
-    .then(cards => console.log(cards))
+  if (oldUserId !== newUserId) {
+    console.log('son diferentes')
+    UserCard.findByIdAndUpdate(userCardId, {user: newUserId, trading: false})
+    .then(cards => res.json(cards))
     .catch(err => res.send(err))
+
+    UserCard.find({user: newUserId, trading: true})
+    .then(cards => {
+      const random = Math.floor(Math.random() * cards.length)
+      console.log('this id ' + cards[random]._id)
+
+      UserCard.findByIdAndUpdate(cards[random]._id, {user: oldUserId, trading: false})
+        .then(cards => res.json(cards))
+        .catch(err => res.send(err))
+    })
+    .catch(err => res.send(err))
+  }
 }
 
 module.exports = makeTrade

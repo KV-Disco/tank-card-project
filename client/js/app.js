@@ -1,3 +1,3 @@
 /* global angular */
 
-angular.module('cardsOfKurskApp', ['ngRoute'])
+angular.module('cardsOfKurskApp', ['ngRoute', 'ngAnimate', 'toastr'])

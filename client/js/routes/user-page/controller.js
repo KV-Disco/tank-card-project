@@ -8,6 +8,9 @@ angular.module('cardsOfKurskApp')
   			$scope.userCards = res.data
   		})
 
+      $scope.ifCardOnTrade = function (isOnTrade){
+        if(isOnTrade){return {'border-color': 'blue'}}
+      }
 
   		$scope.pushToTrade = function (userCardId) {
         console.log(userCardId)

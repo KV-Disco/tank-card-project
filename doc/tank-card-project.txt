@@ -5,3 +5,11 @@ $ mongoimport -d cardsOfKurks -c user_cards --file user_cards.json --jsonArray
 λ mongoexport -d cardsOfKurks -c user_cards --jsonArray -o user_cards.json
 λ mongoexport -d cardsOfKurks -c cards --jsonArray -o cards.json
 λ mongoexport -d cardsOfKurks -c users --jsonArray -o users.json
+
+
+
+mongoimport -h ds123614.mlab.com:23614 -d cards_of_kursk -c cards -u humberto -p 1234Hu --file cards.bson
+
+mongoimport -h ds123614.mlab.com:23614 -d cards_of_kursk -c user_cards -u humberto -p 1234Hu --file user_cards.bson
+
+mongoimport -h ds123614.mlab.com:23614 -d cards_of_kursk -c users -u humberto -p 1234Hu --file users.bson
