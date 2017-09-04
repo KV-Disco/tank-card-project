@@ -11,7 +11,7 @@ angular.module('cardsOfKurskApp')
   			$scope.userCards = res.data
 
         // TODO for loop over user cards
-        $scope.isTrading = userCard.isTrading
+        // $scope.isTrading = userCard.isTrading
   		})
 
       $scope.ifCardOnTrade = function (isOnTrade){

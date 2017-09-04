@@ -1,5 +1,4 @@
-[
-{
+[{
     "_id":
     {
         "$oid": "59a6d6457300a9c6dab1520c"
@@ -31,7 +30,7 @@
     {
         "$oid": "59a6d6457300a9c6dab1520e"
     },
-    "name": "Pz. 4",
+    "name": "Pz. IV",
     "img": "https://i.ytimg.com/vi/by-rCG1s6Vo/maxresdefault.jpg",
     "description": "The Panzerkampfwagen IV (PzKpfw IV), commonly known as the Panzer IV, was a German medium tank developed in the late 1930s and used extensively during the Second World War. Its ordnance inventory designation was Sd.Kfz. 161. The Panzer IV was the most widely manufactured German tank of the Second World War, with some 8,500 built. The Panzer IV was used as the base for many other fighting vehicles, including the Sturmgeschütz IV assault gun, Jagdpanzer IV tank destroyer, the Wirbelwind self-propelled anti-aircraft gun, and the Brummbär self-propelled gun."
 },
@@ -53,3 +52,156 @@
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/M4_Sherman_tank_-_Flickr_-_Joost_J._Bakker_IJmuiden.jpg/300px-M4_Sherman_tank_-_Flickr_-_Joost_J._Bakker_IJmuiden.jpg",
     "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
 }]
+
+[
+{
+    "name": "Pz. III",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Panzerkampfwagen_III_%282%29.JPG/220px-Panzerkampfwagen_III_%282%29.JPG",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "KV-1",
+    "img": "http://www.tanks-encyclopedia.com/ww2/soviet/photos/KV-1_near_Kirovsk.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "Churchill I",
+    "img": "http://www.ww2shots.com/gallery/d/8839-3/CHURCHILL+I+++1-ww2shots-army.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "Comet",
+    "img": "http://www.tanks-encyclopedia.com/wp-content/uploads/2016/08/comet-tank-korean-war.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "Pz. II",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/1/15/PzKpfw_II_01.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "Pz. I",
+    "img": "http://www.tanks-encyclopedia.com/wp-content/uploads/2016/03/SdKfz101.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "BT-7",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/414T80kwAzL._SX466_.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "BT-5",
+    "img": "http://www.tanks-encyclopedia.com/ww2/soviet/photos/BT-5_ftleftview-credits_Yuri_Pasholok.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "BT-2",
+    "img": "http://www.aviarmor.net/tww2/photo/ussr/bt-2/bt-2_3.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "Matilda II",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/MatildaII.jpg/300px-MatildaII.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "Cromwell",
+    "img": "http://www.tanks-encyclopedia.com/ww2/gb/photos/Ex-IDF_Cromwell-latrun.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "Mk IV",
+    "img": "http://www.armortek.co.uk/wp-content/uploads/2014/05/Mk-IV-Tank-1.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "Little Willie ",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Little_Willie.jpg/300px-Little_Willie.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "Maus",
+    "img": "http://www.tanks-encyclopedia.com/wp-content/uploads/2014/12/Maus_Trials_1944.png",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "M5 Stuart",
+    "img": "http://www.auctionsamerica.com/images/lots/LC14/LC14_r0080_01.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "M3 Lee",
+    "img": "http://www.tanks-encyclopedia.com/ww2/US/photos/m3A1-lee_casthull.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "T-70",
+    "img": "http://www.tanks-encyclopedia.com/wp-content/uploads/2015/04/t-70_30.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "Renault Ft.17",
+    "img": "http://www.fiddlersgreen.net/vehicles/Renault-FT17/IMAGES/Renault-FT-17-WWI-Tank-title.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "B2",
+    "img": "http://www.fotothing.com/photos/f06/f06e28954752fec31e4ab830386f8702.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "Valentine",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Valentine_II_in_Kubinka.jpg/300px-Valentine_II_in_Kubinka.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "T1 Heavy",
+    "img": "http://wiki.gcdn.co/images/thumb/7/74/M6_Heavy-side.jpg/281px-M6_Heavy-side.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "Patton",
+    "img": "https://i.pinimg.com/originals/d2/87/49/d2874990bf7b02922b896b566b5af186.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "Panther",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/6/61/Bundesarchiv_Bild_183-H26258%2C_Panzer_V_%22Panther%22.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "Elefant",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/0/07/Elefant_USAOM-01.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "Hetzer",
+    "img": "http://www.tanks-encyclopedia.com/ww2/nazi_germany/photos/Hetzer_Marshallmuseum-LibertyPark-OorlogsmuseumOverloonTheNetherlands.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "SU-100",
+    "img": "http://www.tanks-encyclopedia.com/ww2/soviet/photos/SU_100_czech_republic.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "SU-75",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Su76_nn.jpg/300px-Su76_nn.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "SU-152",
+    "img": "http://wiki.gcdn.co/images/thumb/2/2c/Su-152_assault_gun%2C_in_ambush_under_heavy_cammo_at_Kursk.jpg/320px-Su-152_assault_gun%2C_in_ambush_under_heavy_cammo_at_Kursk.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "Schwerer Gustav",
+    "img": "http://www.awesomeengineering.net/wp-content/uploads/2016/04/3-schwerer-gustav.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+},
+{
+    "name": "Schwerer Gustav",
+    "img": "http://www.awesomeengineering.net/wp-content/uploads/2016/04/3-schwerer-gustav.jpg",
+    "description": "The M4 Sherman, officially Medium Tank, M4, was the most widely used medium tank by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. Thousands were distributed through the Lend-Lease program to the British Commonwealth and Soviet Union. The tank was named by the British for the American Civil War General William Tecumseh Sherman."
+}
+]

@@ -67,6 +67,7 @@
                     <nav ng-if="SessionId">
                         <!-- <a>Trading points: 10</a> -->
                         <a href="/#!/user/{{userInfo.username}}">{{userInfo.username}}</a>
+                        <a ng-click="logOut()">LogOut</a>
                     </nav>
                 </div>
             </header>

@@ -14,7 +14,12 @@ angular.module('cardsOfKurskApp')
 
   	$scope.check = function (user) {
   		userService.login(user.username, user.password)
-  		$window.location.reload()
+  		.then($window.location.reload())
   	}
+
+    $scope.logOut = function () {
+      userService.logOut()
+       .then($window.location.reload())
+    }
   })
   

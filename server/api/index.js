@@ -9,6 +9,8 @@ const pushToTrade = require('./card/pushToTrade')
 const userCheck = require('./users/userCheck')
 const userSession = require('./users/session')
 const userInfo = require('./users/info')
+const logOut = require('./users/logout')
+const userRegistration = require('./users/registration')
 
 router.get('/trading-cards', allTradingCards)
 router.get('/cards', allCards)
@@ -18,5 +20,7 @@ router.get('/user/session', userSession)
 router.get('/user', userInfo)
 router.put('/trade/pick/:userCardId&:newUserId&:oldUserId', makeTrade)
 router.put('/trade/push/:userCardId', pushToTrade)
+router.put('/user/logout', logOut)
+router.post('/user/register/:username&:password', userRegistration)
 
 module.exports = router

@@ -9,10 +9,18 @@
     }
 
     this.login = function (username, password) {
-      console.log(username)
-      console.log(password)
       const url = '/api/user/check/' + username + '&' + password// TODO make login, connect to server, validate credentials, and ... set user with the user var data
       return $http.get(url)
+    }
+
+    this.newUser = function (username, password) {
+      const url = '/api/user/register/' + username + '&' + password
+      return $http.post(url)
+    }
+
+    this.logOut = function () {
+      const url = '/api/user/logout'
+      return $http.put(url)
     }
 
     this.getUser = function () {
