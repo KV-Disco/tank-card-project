@@ -8,10 +8,6 @@
       return $http.get(url)
     }
 
-    var user = {
-      id: '59a6983c7300a9c6dab14f03'
-    }
-
     this.login = function (username, password) {
       console.log(username)
       console.log(password)
@@ -20,7 +16,8 @@
     }
 
     this.getUser = function () {
-      return user
+      const url = '/api/user'
+      return $http.get(url)
     }
   })
 })()

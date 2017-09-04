@@ -2,9 +2,9 @@
 
 angular.module('cardsOfKurskApp')
   .controller('userController', function ($scope, $rootScope, cardService) {
-  	cardService.getUser1()
+  	cardService.getUserCards()
   		.then(function (res) {
-  			console.log(res.data)
+  			console.log(res)
   			$scope.userCards = res.data
   		})
 

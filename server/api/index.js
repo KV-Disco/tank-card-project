@@ -8,19 +8,21 @@ const makeTrade = require('./card/makeTrade')
 const pushToTrade = require('./card/pushToTrade')
 const userCheck = require('./users/userCheck')
 const userSession = require('./users/session')
+const userInfo = require('./users/info')
 
-const allUser2Cards = require('./cards/allUser2')
+// const allUser2Cards = require('./cards/allUser2')
 // const userInformation = require('./users/Information')
 
 router.get('/trading-cards', allTradingCards)
 router.get('/cards', allCards)
-router.get('/user1', allUserCards)
+router.get('/user/cards', allUserCards)
 router.get('/user/check/:username&:password', userCheck)
 router.get('/user/session', userSession)
+router.get('/user', userInfo)
 router.put('/trade/pick/:userCardId&:userId', makeTrade)
 router.put('/trade/push/:userCardId', pushToTrade)
 
-router.get('/user2', allUser2Cards)
+// router.get('/user2', allUser2Cards)
 // router.get('/user/:username', userInformation)
 
 module.exports = router

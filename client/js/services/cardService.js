@@ -8,13 +8,8 @@
           return $http.get(url)
         }
 
-        function getUser1 () {
-          const url = '/api/user1'
-          return $http.get(url)
-        }
-
-        function getUser2 () {
-          const url = '/api/user2'
+        function getUserCards () {
+          const url = '/api/user/cards'
           return $http.get(url)
         }
 
@@ -33,8 +28,7 @@
 
         return {
           getTradingCards: getTradingCards,
-          getUser1: getUser1,
-          getUser2: getUser2,
+          getUserCards: getUserCards,
           pushToTrade: pushToTrade,
           pickFromTrade: pickFromTrade
         }

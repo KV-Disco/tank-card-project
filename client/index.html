@@ -17,7 +17,7 @@
             <header ng-controller="headerController">
                 <div class="container clearfix">
                     <h1 id="logo"><a href="/">TheCardsOf<span>KURSK</span></a></h1>
-                    <nav ng-if="!userInfo._id">
+                    <nav ng-if="!SessionId">
                         <!-- Dropdown -->
                         <div class="dropdown">
                             <a href="#!/registration">Sign Up</a>
@@ -52,7 +52,6 @@
                                                     <!-- Button -->
                                                     <div class="controls">
                                                         <imput type="submit" ng-click="check(user)" value="Check" class="btn btn-success">Login</imput>
-                                                        <a href="#!/user1">Log in</a>
                                                     </div>
                                                 </div>
                                             </fieldset>
@@ -64,7 +63,7 @@
                         </div>
                         <!-- /Dropdown -->
                     </nav>
-                    <nav ng-if="userInfo._id">
+                    <nav ng-if="SessionId">
                         <!-- <a>Trading points: 10</a> -->
                         <a href="/#!/user/{{userInfo.username}}">{{userInfo.username}}</a>
                     </nav>
@@ -102,9 +101,9 @@
     <!-- user-page -->
     <script src="js\routes\user-page\index.js"></script>
     <script src="js\routes\user-page\controller.js"></script>
-    <!-- user-page2 -->
+    <!-- user-page2 --><!-- 
     <script src="js\routes\user2\index.js"></script>
-    <script src="js\routes\user2\controller.js"></script>
+    <script src="js\routes\user2\controller.js"></script> -->
     <!-- registration -->
     <script src="js\routes\registration\index.js"></script>
     <script src="js\routes\registration\controller.js"></script>

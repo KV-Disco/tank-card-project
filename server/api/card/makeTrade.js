@@ -5,8 +5,12 @@ function makeTrade (req, res) {
 
   console.log(req.session.id)
 
-  UserCard.findByIdAndUpdate(userCardId, {user: userId, trading: false})
-    .then(cards => res.json(cards))
+  // UserCard.findByIdAndUpdate(userCardId, {user: userId, trading: false})
+  //   .then(cards => res.json(cards))
+  //   .catch(err => res.send(err))
+
+  UserCard.find({user: userId, trading: true})
+    .then(cards => console.log(cards))
     .catch(err => res.send(err))
 }
 

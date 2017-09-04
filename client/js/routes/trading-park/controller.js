@@ -8,9 +8,13 @@ angular.module('cardsOfKurskApp')
 
 
   	$scope.pickFromTrade = function(userCardId) {
-  		const userId = userService.getUser().id
 
-  		cardService.pickFromTrade(userCardId, userId)
+      userService.getSessionId()
+      .then(res => {
+        const userId = res.data
+        console.log(userId)
+        cardService.pickFromTrade(userCardId, userId)
+      })
   	}
   })
   
