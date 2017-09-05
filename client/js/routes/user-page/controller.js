@@ -2,17 +2,22 @@
 
 angular.module('cardsOfKurskApp')
   .controller('userController', function ($scope, $rootScope, cardService) {
-
-    $scope.isTrading = {}
+    var socket = io();
+    // $scope.isTrading = {}
 
   	cardService.getUserCards()
   		.then(function (res) {
   			console.log(res)
   			$scope.userCards = res.data
-
-        // TODO for loop over user cards
-        // $scope.isTrading = userCard.isTrading
   		})
+
+      socket.on('cardTraded', function() {
+        cardService.getUserCards()
+        .then(function (res) {
+          console.log(res)
+          $scope.userCards = res.data
+        })
+      })
 
       $scope.ifCardOnTrade = function (isOnTrade){
         if(isOnTrade){return {'border-color': 'blue'}}
@@ -24,11 +29,8 @@ angular.module('cardsOfKurskApp')
           .then(result => {
             cardService.getUserCards()
             .then(function (res) {
-              console.log(res)
               $scope.userCards = res.data
-
-              // TODO for loop over user cards
-              // $scope.isTrading = userCard.isTrading
+              socket.emit('updateAll')
             })
           })
   		}

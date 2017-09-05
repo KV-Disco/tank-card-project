@@ -6,21 +6,28 @@ function makeTrade (req, res) {
   console.log(req.session.id)
 
   if (oldUserId !== newUserId) {
-    console.log('son diferentes')
-    UserCard.findByIdAndUpdate(userCardId, {user: newUserId, trading: false})
-    .then(cards => res.json(cards))
-    .catch(err => res.send(err))
-
     UserCard.find({user: newUserId, trading: true})
-    .then(cards => {
-      const random = Math.floor(Math.random() * cards.length)
-      console.log('this id ' + cards[random]._id)
+      .then((cards) => {
+        if (cards.length > 0) {
+          UserCard.findByIdAndUpdate(userCardId, {user: newUserId, trading: false})
+          .then(cards => res.json(cards))
+          .catch(err => res.send(err))
 
-      UserCard.findByIdAndUpdate(cards[random]._id, {user: oldUserId, trading: false})
-        .then(cards => res.json(cards))
-        .catch(err => res.send(err))
-    })
-    .catch(err => res.send(err))
+          UserCard.find({user: newUserId, trading: true})
+          .then(cards => {
+            const random = Math.floor(Math.random() * cards.length)
+            console.log('this id ' + cards[random]._id)
+
+            UserCard.findByIdAndUpdate(cards[random]._id, {user: oldUserId, trading: false})
+              .then(cards => res.json(cards))
+              .catch(err => res.send(err))
+          })
+          .catch(err => res.send(err))
+        } else {
+          res.send(false)
+        }
+      })
+      .catch(err => res.send(err))
   }
 }
 

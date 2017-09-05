@@ -31,14 +31,14 @@ angular.module('cardsOfKurskApp')
         const newUserId = res.data
         if(newUserId !== oldUserId){
           console.log(newUserId)
-          cardService.pickFromTrade(userCardId, newUserId, oldUserId).then(
-            socket.emit('updateAll')
-            )
+          cardService.pickFromTrade(userCardId, newUserId, oldUserId).then((res) => {
+            if(!res.data){
+              toastr.error('You have no more cards to trade.', '0 tading cards!!');
+            }else socket.emit('updateAll')
+            })
         }
         else{
-           var toast = toastr.warning('You are trying to get card that you yourself push.');
-
-           toastr.refreshTimer(toast, 1000);
+          toastr.warning('You are trying to get card that you yourself push.', 'That was yours!!');
         }
 
       })
