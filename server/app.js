@@ -3,8 +3,13 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const cookieSession = require('cookie-session')
 const path = require('path')
+const sio = require('socket.io')
+const http = require('http')
 
 const app = express()
+const server = http.createServer(app)
+const io = sio.listen(server)
+
 const urlDb = process.env.URL_DB || 'mongodb://localhost:27017/cardsOfKurks'
 const PORT = process.env.PORT || 3001
 
@@ -24,5 +29,11 @@ app.use(cookieSession({
 
 app.use('/api', require('./api'))
 
-app.listen(PORT)
+io.on('connection', function (socket) {
+  socket.on('updateAll', () => {
+    io.emit('timeToUpdate')
+  })
+})
+
+server.listen(PORT)
 console.log(`Dude PORT ${PORT} is listening.... be scare.....`)
