@@ -1,7 +1,7 @@
 /* global angular */
 
 angular.module('cardsOfKurskApp')
-  .controller('headerController', function ($scope, $rootScope, $window, userService) {
+  .controller('headerController', function ($scope, $rootScope, $window, $location, userService) {
   	userService.getSessionId()
   		.then(function (res) {
   			$rootScope.SessionId = res.data
@@ -14,7 +14,10 @@ angular.module('cardsOfKurskApp')
 
   	$scope.check = function (user) {
   		userService.login(user.username, user.password)
-  		.then($window.location.reload())
+  		.then(() => {
+        $location.path('/')
+        $window.location.reload()
+      })
   	}
 
     $scope.logOut = function () {

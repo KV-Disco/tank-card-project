@@ -9,7 +9,7 @@ function userCheck (req, res) {
       req.session.id = user[0]._id
       console.log(user)
       console.log(req.session.id)
-      res.json(user)
+      res.send(req.session)
     })
     .catch(err => res.send(err))
 }

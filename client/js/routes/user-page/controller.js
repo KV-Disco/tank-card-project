@@ -22,7 +22,14 @@ angular.module('cardsOfKurskApp')
         console.log(userCardId)
   			cardService.pushToTrade(userCardId)
           .then(result => {
-            $scope.isTrading[userCardId] = true
+            cardService.getUserCards()
+            .then(function (res) {
+              console.log(res)
+              $scope.userCards = res.data
+
+              // TODO for loop over user cards
+              // $scope.isTrading = userCard.isTrading
+            })
           })
   		}
   })
