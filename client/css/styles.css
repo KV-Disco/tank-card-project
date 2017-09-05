@@ -96,12 +96,16 @@ a:hover {
 section {
   padding: 20px 0; }
 
-section h1 {
+section h1, h2 {
   font-weight: 700;
   margin-bottom: 30px; }
 
+section h2 {
+  font-weight: 300;
+  margin-bottom: 20px; }
+
 section p {
-  margin-bottom: 30px; }
+  margin-bottom: 10px; }
 
 section p:last-child {
   margin-bottom: 0; }
@@ -303,9 +307,6 @@ header.smaller nav a {
       text-justify: inter-word;
       font-size: 12px; }
 
-.is-trading {
-  border-color: blue; }
-
 .multiline-ellipsis {
   display: block;
   display: -webkit-box;
@@ -336,7 +337,7 @@ header.smaller nav a {
   min-height: 700px; }
 
 .rowsOfCards {
-  margin-top: 100px;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -411,12 +412,6 @@ input {
 .onebyone-carosel .prev {
   left: -25%; }
 
-.carouselContainer {
-  padding-top: 30px;
-  padding-bottom: 30px; }
-  .carouselContainer h2 {
-    font-weight: bold; }
-
 .cardsUsers {
   border: 5px solid;
   box-shadow: 3px -2px 5px 2px black;
@@ -440,6 +435,12 @@ input {
       text-align: justify;
       text-justify: inter-word;
       font-size: 12px; }
+
+.humberto {
+  background-image: url("/img/humberto.jpg"); }
+
+.cardsUsers .is-trading {
+  border-color: blue; }
 
 .cardsUsers {
   transition-property: transform;

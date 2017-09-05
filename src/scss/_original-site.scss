@@ -101,11 +101,14 @@ a:hover {
 
 section {
   padding: 20px 0; }
-  section h1 {
+  section h1, h2 {
     font-weight: 700;
     margin-bottom: 30px; }
+  section h2 {
+  font-weight: 300;
+  margin-bottom: 20px; }
   section p {
-    margin-bottom: 30px; }
+    margin-bottom: 10px; }
     section p:last-child {
       margin-bottom: 0; }
   section.color {

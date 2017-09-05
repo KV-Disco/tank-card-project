@@ -17,7 +17,7 @@ function registration (req, res) {
           })
           Card.find({}, {_id: true})
             .then(cardsId => {
-              for (var i = 20 - 1; i >= 0; i--) {
+              for (var i = cardsId.length - 1; i >= 0; i--) {
                 const random = Math.floor(Math.random() * cardsId.length)
 
                 const newUserCard = new UserCard({
