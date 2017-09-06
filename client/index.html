@@ -66,7 +66,8 @@
                     </nav>
                     <nav ng-if="SessionId">
                         <!-- <a>Trading points: 10</a> -->
-                        <a href="/#!/user/{{userInfo.username}}">{{userInfo.username}}</a>
+                        <a href="/#!/"><span class="glyphicon glyphicon-transfer"></span> The Trading Park</a>
+                        <a href="/#!/user/{{userInfo.username}}"><span class="glyphicon glyphicon-home"></span> Garage</a>
                         <a ng-click="logOut()">LogOut</a>
                     </nav>
                 </div>

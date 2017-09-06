@@ -1,29 +1,51 @@
 <section ng-if="!SessionId">
-    <div class="container">
-        <h1>How to Play Cards of Kursk:</h1>
+    <div class="container mainExplanation">
         <div class="row">
-            <div class="col-md-9">
-                <p>To play you will need to create an account. Ones its created it will grant you access to your very own garage and by clicking on the username displayed on the header of the page you will access it.</p>
-                <h2>Garage</h2>
-                <p>The garage will display the cards you own and by clicking on them they will be send to the Trading Park.</p>
-                <p>Careful!! Ones you send a card to the Trading Park you aren´t going to be able to retrieve it, so think carefully if you really want to send it.</p>
-                <p>The cards on the trading park will be highlighted with a blue border.</p>
-                <h2>Trading Park:</h2>
-                <p>Here is where magic happens!! In it will be displayed all the cards all the users have push to trade, even yours.</p>
-                <p>Your cards will be highlighted with a red border, you would not be able to take them back.
-                </p>
-                <p>By having cards on the Trading Park you will be able to pick cards of other users. The picked cards will be send to your garage and one of your cards on trading will be selected and send to the garage of the original user of the picked card.</p>
-            </div>
-            <div class="hidden-xs hidden-sm col-md-3 cardImg">
-                <div class="cardsUsers thumbnail">
-                    <div class="caption">
-                        <h3>Humberto</h3>
+            <div class="col-xs-12">
+                <div class="col-xs-12 col-lg-9">
+                    <h1>How to Play Cards of Kursk:</h1>
+                    <p>To start playing you first will need <a href="#!/registration">to create an account</a>.</p>
+                    <p>Once you're logged you'll be able to access your Garage by clicking on your username.</p>
+                    <h2><span class="glyphicon glyphicon-home"></span> The Garage</h2>
+                    <p>The garage:
+                        <ul>
+                            <li>will display <strong>YOUR cards</strong></li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="hidden-xs hidden-sm hidden-md col-lg-3 cardImg">
+                    <div class="cardsUsers thumbnail">
+                        <div class="caption">
+                            <h3>Humberto</h3>
+                        </div>
+                        <div class="imgContainer humberto">
+                        </div>
+                        <div class="caption tankDescription multiline-ellipsis">
+                            <p>This is a card example. The guy on the image is the creator of this web pls dont hate him.</p>
+                        </div>
                     </div>
-                    <div class="imgContainer humberto">
-                    </div>
-                    <div class="caption tankDescription multiline-ellipsis">
-                        <p>This is a card example. The guy on the image is the creator of this web pls dont hate him.</p>
-                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <p>
+                        <ul>
+                            <li>will allow you to send cards (by clicking them → blue border) to the <em>Trading Park</em></li>
+                        </ul>
+                    </p>
+                    <p>Warning!! Once you send a card to the Trading Park you won't be able to retrieve it!</p>
+                    <h2><span class="glyphicon glyphicon-transfer"></span> The Trading Park</h2>
+                    <p>All the <strong>cards available to trade</strong> are here</p>
+                    <p>YOUR cards will be highlighted with a red border (you cannot get them)
+                    </p>
+                    <p>Rules:
+                        <ul>
+                            <li>You can pick cards of other users ONLY if you have cards on the Trading Park</li>
+                            <li>When you pick a card of another user:
+                                <ul>
+                                    <li>The picked card will be sent to your garage</li>
+                                    <li>One of your cards on trading will be sent to the garage of the user that picked your card.</li>
+                                </ul>
+                        </ul>
+                    </p>
                 </div>
             </div>
         </div>
@@ -31,21 +53,29 @@
 </section>
 <section class="tradingPark">
     <div class="container content">
-        <h1>Trading Park <span data-toggle="modal" data-target="#infoModal" class="glyphiconInfo glyphicon glyphicon-info-sign" aria-hidden="true"></span></h1>
-        
+        <h1><span class="glyphicon glyphicon-transfer"></span> Trading Park <span data-toggle="modal" data-target="#infoModal" class="glyphiconInfo glyphicon glyphicon-info-sign" aria-hidden="true"></span></h1>
         <!-- Modal -->
         <div id="infoModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title">THE TRADING PARK</h1>
+                        <h1 class="modal-title"><span class="glyphicon glyphicon-transfer"></span> THE TRADING PARK</h1>
                     </div>
                     <div class="modal-body">
-                        <p>Here is where magic happens!! In it will be displayed all the cards all the users have push to trade, even yours.</p>
-                        <p>Your cards will be highlighted with a red border, you would not be able to take them back.
+                        <p>All the <strong>cards available to trade</strong> are here</p>
+                        <p>YOUR cards will be highlighted with a red border (you cannot get them)
                         </p>
-                        <p>By having cards on the Trading Park you will be able to pick cards of other users. The picked cards will be send to your garage and one of your cards on trading will be selected and send to the garage of the original user of the picked card.</p>
+                        <h2>Rules:</h2>
+                        <ul>
+                            <li>You can pick cards of other users ONLY if you have cards on the Trading Park</li>
+                            <li>When you pick a card of another user:
+                                <ul>
+                                    <li>The picked card will be sent to your garage</li>
+                                    <li>One of your cards on trading will be sent to the garage of the user that picked your card.</li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
