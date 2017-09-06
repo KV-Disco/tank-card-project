@@ -33,7 +33,7 @@ angular.module('cardsOfKurskApp')
           console.log(newUserId)
           cardService.pickFromTrade(userCardId, newUserId, oldUserId).then((res) => {
             if(!res.data){
-              toastr.error('You have no more cards to trade.', '0 tading cards!!');
+              toastr.error('You have no cards available for trading.', '0 tading cards!!');
             }else socket.emit('updateAll')
             })
         }

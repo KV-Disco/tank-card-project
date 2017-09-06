@@ -5,19 +5,20 @@ angular.module('cardsOfKurskApp')
   	$scope.createNewUser = function (newUser){
   		const {username, password} = newUser
 
-  		userService.newUser(username, password)
-  			.then(res => {
-  				if (res.data){	
-  			           var toast = toastr.warning('Eather this user already exist or your password is to short.', 'Warning')
-  			  	}
-  			  	else{
-              userService.login(username, password)
-                .then(() => {
-                  $location.path('/')
-                  $window.location.reload()
-                })
-  			  	}
-  		})
+  		if(password.length >= 4){
+        userService.newUser(username, password)
+          .then(res => {
+            if (res.data){  
+                     var toast = toastr.warning('This user already exist.', 'Warning')
+              }
+              else{
+                userService.login(username, password)
+                  .then(() => {
+                    $location.path('/')
+                    $window.location.reload()
+                  })
+              }
+        })}else {}
   	}
   })
   

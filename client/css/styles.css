@@ -276,6 +276,12 @@ header.smaller nav a {
   #info-bar span.all-tutorials {
     border-bottom: solid 1px #0793e2; } }
 
+span.glyphiconInfo {
+  font-size: 15px; }
+
+span.glyphiconInfo:hover {
+  font-size: 25px; }
+
 .exampleCard {
   height: 200px;
   width: auto;
@@ -306,6 +312,13 @@ header.smaller nav a {
       text-align: justify;
       text-justify: inter-word;
       font-size: 12px; }
+
+#infoModal .modal-content {
+  background: #4c4c4c;
+  background: -moz-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, black 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+  background: -webkit-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, black 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+  background: linear-gradient(to bottom, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, black 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); }
 
 .multiline-ellipsis {
   display: block;
@@ -396,22 +409,6 @@ input {
 .infoBlock {
   color: #afafaf; }
 
-.carousel-inner.onebyone-carosel {
-  margin: auto;
-  width: 100%; }
-
-.onebyone-carosel .active.left {
-  left: -24%; }
-
-.onebyone-carosel .active.right {
-  left: 24%; }
-
-.onebyone-carosel .next {
-  left: 25%; }
-
-.onebyone-carosel .prev {
-  left: -25%; }
-
 .cardsUsers {
   border: 5px solid;
   box-shadow: 3px -2px 5px 2px black;
@@ -448,4 +445,4 @@ input {
   transition-timing-function: ease-in; }
 
 .cardsUsers:hover {
-  transform: translateY(-65px); }
+  transform: translateY(-30px); }

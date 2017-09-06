@@ -22,7 +22,10 @@ angular.module('cardsOfKurskApp')
 
     $scope.logOut = function () {
       userService.logOut()
-       .then($window.location.reload())
+      .then(() => {
+        $location.path('/')
+        $window.location.reload()
+      })
     }
   })
   

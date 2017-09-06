@@ -31,7 +31,28 @@
 </section>
 <section class="tradingPark">
     <div class="container content">
-        <h1>Trading Park</h1>
+        <h1>Trading Park <span data-toggle="modal" data-target="#infoModal" class="glyphiconInfo glyphicon glyphicon-info-sign" aria-hidden="true"></span></h1>
+        
+        <!-- Modal -->
+        <div id="infoModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">THE TRADING PARK</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>Here is where magic happens!! In it will be displayed all the cards all the users have push to trade, even yours.</p>
+                        <p>Your cards will be highlighted with a red border, you would not be able to take them back.
+                        </p>
+                        <p>By having cards on the Trading Park you will be able to pick cards of other users. The picked cards will be send to your garage and one of your cards on trading will be selected and send to the garage of the original user of the picked card.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="rowsOfCards">
             <div class="cards thumbnail" ng-style="{{isUserCard(SessionId, userCard.user)}}" ng-repeat="userCard in userCards" ng-click="pickFromTrade(userCard._id, userCard.user)">
                 <div class="caption">
