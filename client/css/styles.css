@@ -403,19 +403,6 @@ input {
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); }
 
-@media all and (max-width: 900px) {
-  .dropdown-menu {
-    left: 0;
-    top: 70px; } }
-
-@media all and (max-width: 540px) {
-  header h1#logo {
-    font-size: 35px; }
-    header h1#logo span {
-      font-size: 40px; }
-  header nav a {
-    font-size: 13px; } }
-
 .infoBlock {
   color: #afafaf; }
 
@@ -451,6 +438,27 @@ input {
   border-bottom: 1px solid #bbb;
   margin-top: 10px;
   font-weight: bold; }
+
+@media all and (max-width: 900px) {
+  .dropdown-menu {
+    left: 0;
+    top: 70px; } }
+
+@media all and (max-width: 700px) {
+  .mainExplanation p, .mainExplanation li {
+    font-size: 18px; }
+  .mainExplanation h1 {
+    font-size: 27px; }
+  .mainExplanation h2 {
+    font-size: 22px; } }
+
+@media all and (max-width: 540px) {
+  header h1#logo {
+    font-size: 35px; }
+    header h1#logo span {
+      font-size: 40px; }
+  header nav a {
+    font-size: 13px; } }
 
 .cardsUsers {
   border: 5px solid;
