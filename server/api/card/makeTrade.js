@@ -3,8 +3,6 @@ const UserCard = require('../../models/UserCard')
 function makeTrade (req, res) {
   const {userCardId, newUserId, oldUserId} = req.params
 
-  console.log(req.session.id)
-
   if (oldUserId !== newUserId) {
     UserCard.find({user: newUserId, trading: true})
       .then((cards) => {
@@ -16,7 +14,6 @@ function makeTrade (req, res) {
           UserCard.find({user: newUserId, trading: true})
           .then(cards => {
             const random = Math.floor(Math.random() * cards.length)
-            console.log('this id ' + cards[random]._id)
 
             UserCard.findByIdAndUpdate(cards[random]._id, {user: oldUserId, trading: false})
               .then(cards => res.json(cards))

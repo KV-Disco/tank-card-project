@@ -16,9 +16,6 @@ angular.module('cardsOfKurskApp')
       })
 
     $scope.isUserCard = function(sessionId, userCardId) {
-      console.log(sessionId)
-      console.log(userCardId)
-      
       if(sessionId === userCardId){
         return {'border-color': 'red'}
       }
@@ -31,7 +28,6 @@ angular.module('cardsOfKurskApp')
         const newUserId = res.data
         if(newUserId){
           if(newUserId !== oldUserId){
-            console.log(newUserId)
             cardService.pickFromTrade(userCardId, newUserId, oldUserId).then((res) => {
               if(!res.data){
                 toastr.error('You have no cards available for trading.', '0 tading cards!!');

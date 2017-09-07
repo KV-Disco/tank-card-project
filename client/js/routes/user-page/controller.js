@@ -7,24 +7,14 @@ angular.module('cardsOfKurskApp')
 
   	cardService.getUserCards()
   		.then(function (res) {
-  			console.log(res)
   			$scope.userCards = res.data
   		})
-
-    // socket.on('cardTraded', function() {
-    //   cardService.getUserCards()
-    //   .then(function (res) {
-    //     console.log(res)
-    //     $scope.userCards = res.data
-    //   })
-    // })
 
     $scope.ifCardOnTrade = function (isOnTrade){
       if(isOnTrade){return {'border-color': 'blue'}}
     }
 
 		$scope.pushToTrade = function (userCardId) {
-      console.log(userCardId)
 			cardService.pushToTrade(userCardId)
         .then(result => {
           cardService.getUserCards()
