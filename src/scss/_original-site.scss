@@ -222,7 +222,7 @@ header {
 
 /* =Media Queries
 -------------------------------------------------------------- */
-@media all and (max-width: 900px) {
+@media all and (max-width: 1150px) {
   /* =Header
   -------------------------------------------------------------- */
   header{
@@ -247,6 +247,8 @@ header {
   header.smaller {
     height: 75px; }
     header.smaller h1#logo {
+      width: 100%;
+      text-align: center;
       height: 40px;
       line-height: 40px;
       font-size: 30px; }

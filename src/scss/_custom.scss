@@ -159,6 +159,18 @@ input{
 
 }}
 
+@media all and (max-width: 540px) {
+    header h1#logo {
+        font-size: 35px;
+        span{
+            font-size: 40px
+        }}
+    header nav a {
+        font-size: 13px;
+    }
+
+}
+
 .infoBlock{
     color: #afafaf;
 }
