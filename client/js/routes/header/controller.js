@@ -6,7 +6,7 @@ angular.module('cardsOfKurskApp')
   		.then(function (res) {
   			$rootScope.SessionId = res.data
   		})
-
+      
   	userService.getUser()
   		.then(function (res) {
   			$scope.userInfo = res.data
