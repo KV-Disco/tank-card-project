@@ -29,17 +29,21 @@ angular.module('cardsOfKurskApp')
       userService.getSessionId()
       .then(res => {
         const newUserId = res.data
-        if(newUserId !== oldUserId){
-          console.log(newUserId)
-          cardService.pickFromTrade(userCardId, newUserId, oldUserId).then((res) => {
-            if(!res.data){
-              toastr.error('You have no cards available for trading.', '0 tading cards!!');
-            }else socket.emit('updateAll')
-            })
-        }
-        else{
-          toastr.warning('You are trying to get card that you yourself push.', 'That was yours!!');
-        }
+        if(newUserId){
+          if(newUserId !== oldUserId){
+            console.log(newUserId)
+            cardService.pickFromTrade(userCardId, newUserId, oldUserId).then((res) => {
+              if(!res.data){
+                toastr.error('You have no cards available for trading.', '0 tading cards!!');
+              }else socket.emit('updateAll')
+              })
+          }
+          else{
+            toastr.warning('You are trying to get card that you yourself push.', 'That was yours!!')
+          }
+        }else{
+          toastr.warning('You need to be loged in to pick cards!', 'Login!!')
+      }
 
       })
     }
