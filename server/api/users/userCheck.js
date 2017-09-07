@@ -7,8 +7,6 @@ function userCheck (req, res) {
   User.find({username, password})
     .then(user => {
       req.session.id = user[0]._id
-      console.log(user)
-      console.log(req.session.id)
       res.send(req.session)
     })
     .catch(err => res.send(err))

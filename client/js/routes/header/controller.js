@@ -1,7 +1,7 @@
 /* global angular */
 
 angular.module('cardsOfKurskApp')
-  .controller('headerController', function ($scope, $rootScope, $window, $location, userService) {
+  .controller('headerController', function ($scope, $rootScope, $window, $location, userService, toastr) {
   	userService.getSessionId()
   		.then(function (res) {
   			$rootScope.SessionId = res.data
@@ -14,9 +14,13 @@ angular.module('cardsOfKurskApp')
 
   	$scope.check = function (user) {
   		userService.login(user.username, user.password)
-  		.then(() => {
-        $location.path('/')
-        $window.location.reload()
+  		.then((res) => {
+        if(res.data.id){
+          $location.path('/')
+          $window.location.reload()
+        }else{
+          toastr.error('The user dont exist or your password is wrong.', 'Something went wrong!!')
+        }
       })
   	}
 
