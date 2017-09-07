@@ -8,7 +8,10 @@ angular.module('cardsOfKurskApp')
         $scope.userCards = res.data
       })
 
-      socket.on('timeToUpdate', () => {
+      socket.on('timeToUpdate', (loadingCardId) => {
+        var myCardSelector = angular.element( document.querySelector( loadingCardId ) )
+        
+        myCardSelector.removeClass('loading')
         cardService.getTradingCards()
           .then(function (res) {
             $scope.userCards = res.data
@@ -39,8 +42,7 @@ angular.module('cardsOfKurskApp')
                 toastr.error('You have no cards available for trading.', '0 tading cards!!');
                 myCardSelector.removeClass('loading')
               }else {
-                  socket.emit('updateAll')
-                  myCardSelector.removeClass('loading')
+                  socket.emit('updateAll', loadingCardId)
                 }
               })
           }

@@ -32,8 +32,8 @@ app.use(cookieSession({
 app.use('/api', require('./api'))
 
 io.on('connection', function (socket) {
-  socket.on('updateAll', () => {
-    io.emit('timeToUpdate')
+  socket.on('updateAll', (loadingCardId) => {
+    io.emit('timeToUpdate', loadingCardId)
   })
 })
 

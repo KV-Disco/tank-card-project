@@ -15,15 +15,17 @@ angular.module('cardsOfKurskApp')
     }
 
 		$scope.pushToTrade = function (userCardId) {
-      // var loadingCardId = '#loading' + userCardId
-      // angular.element( document.querySelector( loadingCardId ) ).addClass('loading')
+      var loadingCardId = '#loading' + userCardId
+      var myCardSelector = angular.element( document.querySelector( loadingCardId ) )
+      
+      myCardSelector.addClass('loading')
 			cardService.pushToTrade(userCardId)
         .then(result => {
           cardService.getUserCards()
           .then(function (res) {
             $scope.userCards = res.data
             socket.emit('updateAll')
-            // angular.element( document.querySelector( loadingCardId ) ).removeClass('loading')
+            myCardSelector.removeClass('loading')
           })
         })
 		}
