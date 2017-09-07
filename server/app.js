@@ -1,3 +1,5 @@
+require('dotenv').load()
+
 const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
@@ -10,8 +12,8 @@ const app = express()
 const server = http.createServer(app)
 const io = sio.listen(server)
 
-const urlDb = process.env.URL_DB || 'mongodb://localhost:27017/cardsOfKurks'
-const PORT = process.env.PORT || 3001
+const urlDb = process.env.URL_DB
+const PORT = process.env.PORT
 
 mongoose.Promise = global.Promise
 mongoose.connect(urlDb, {useMongoClient: true})
