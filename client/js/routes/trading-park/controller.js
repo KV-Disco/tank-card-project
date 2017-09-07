@@ -25,8 +25,9 @@ angular.module('cardsOfKurskApp')
 
     $scope.pickFromTrade = function(userCardId, oldUserId) {
       var loadingCardId = '#loading' + userCardId
-      console.log(loadingCardId)
-      angular.element( document.querySelector( loadingCardId ) ).addClass('loading')
+      var myCardSelector = angular.element( document.querySelector( loadingCardId ) )
+      
+      myCardSelector.addClass('loading')
 
       userService.getSessionId()
       .then(res => {
@@ -36,19 +37,20 @@ angular.module('cardsOfKurskApp')
             cardService.pickFromTrade(userCardId, newUserId, oldUserId).then((res) => {
               if(!res.data){
                 toastr.error('You have no cards available for trading.', '0 tading cards!!');
+                myCardSelector.removeClass('loading')
               }else {
                   socket.emit('updateAll')
-                  angular.element( document.querySelector( loadingCardId ) ).removeClass('loading')
+                  myCardSelector.removeClass('loading')
                 }
               })
           }
           else{
             toastr.warning('You are trying to get card that you yourself push.', 'That was yours!!')
-                  angular.element( document.querySelector( loadingCardId ) ).removeClass('loading')
+            myCardSelector.removeClass('loading')
           }
         }else{
           toastr.warning('You need to be loged in to pick cards!', 'Login!!')
-          angular.element( document.querySelector( loadingCardId ) ).removeClass('loading')
+          myCardSelector.removeClass('loading')
       }
 
       })
