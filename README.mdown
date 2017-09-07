@@ -2,7 +2,7 @@
 
 <a href="https://www.w3.org/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/html5-css3-js.png" width= "128px"></a><a href="https://sass-lang.com/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/sass.png" width= "64px"></a><a href="https://getbootstrap.com/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/bootstrap.png" width= "64px"></a><a href="https://www.ecma-international.org/ecma-262/6.0/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/es6.png" width= "64px"></a><a href="https://jquery.com/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/jquery.png" width= "128px"></a>
 
-<a href="https://www.npmjs.com/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/npm.png" width= "128px"></a><a href="https://bower.io/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/bower.png" width= "64px"></a><a href="https://www.browserify.org/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/browserify.png" width= "128px"></a>
+<a href="https://www.npmjs.com/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/npm.png" width= "128px"></a><a href="https://bower.io/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/bower.png" width= "64px"></a>
 
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
@@ -12,7 +12,10 @@ This repository contains a fullstack project **CARDS OF KURSK**, in it the user 
 
 ![Standard - JavaScript Style Guide](clien/img/humberto.jpg)
 
-## Installation
+### Installation
+
+You need to have installed NodeJS with npm, bower and MongoDB
+---
 
 **First** you will need to run on terminal:
 
@@ -35,3 +38,44 @@ URL_DB=mongodb://localhost:27017/<db-name>
 PORT=<PORT>
 ```
 
+### To run the server:
+
+```
+$ npm start
+```
+
+### To run in dev mode:
+
+```
+$npm run dev
+```
+---
+
+## Built with:
+
+- **Front-end**
+
+    - bootstrap: ^3.3.7,
+    - angular: ^1.6.6,
+        - angular-route: ^1.6.6,
+        - angular-toastr: ^2.1.1,
+        - angular-animate: ^1.6.6,
+    - socket.io-client: ^2.0.3,
+    - sweetalert2: ^6.6.10
+
+- **Back-end**
+
+    - body-parser: ^1.17.2,
+    - bower: ^1.8.0,
+    - cookie-session: ^1.3.1,
+    - dotenv: ^4.0.0,
+    - express: ^4.15.4,
+    - mongoose: ^4.11.9,
+    - socket.io: ^2.0.3
+    - node-sass: ^4.5.3
+
+---
+
+## Author
+
+[Humberto Acea Brunetti](https://github.com/KV-Disco)
