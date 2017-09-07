@@ -41,6 +41,7 @@
                     <h3>{{userCard.card.name}}</h3>
                 </div>
                 <div class="imgContainer" ng-style="{'background-image':'url('+ userCard.card.img + ')'}">
+                    <div id="{loading{{userCard._id}}}" class="loadingContainer"></div>
                 </div>
                 <div class="caption tankDescription multiline-ellipsis">
                     <p>{{userCard.card.description}}</p>

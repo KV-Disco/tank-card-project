@@ -1,6 +1,6 @@
-$ mongoimport -d cardsOfKurks -c users --file users.json --jsonArray
-$ mongoimport -d cardsOfKurks -c cards --file cards.json --jsonArray
-$ mongoimport -d cardsOfKurks -c user_cards --file user_cards.json --jsonArray
+$ mongoimport -d cardsOfKurks -c users --file /data/users.json --jsonArray
+$ mongoimport -d cardsOfKurks -c cards --file /data/cards.json --jsonArray
+$ mongoimport -d cardsOfKurks -c user_cards --file /data/user_cards.json --jsonArray
 
 λ mongoexport -d cardsOfKurks -c user_cards --jsonArray -o user_cards.json
 λ mongoexport -d cardsOfKurks -c cards --jsonArray -o cards.json

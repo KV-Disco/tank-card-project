@@ -313,6 +313,17 @@ span.glyphiconInfo:hover {
     .cards .tankDescription p {
       font-size: 12px; }
 
+.loadingContainer {
+  height: 100%;
+  width: 100%; }
+
+.loading {
+  background-image: url("../img/loading.gif");
+  opacity: 0.6;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
 #infoModal .modal-content {
   background: #4c4c4c;
   background: -moz-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, black 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
