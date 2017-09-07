@@ -87,12 +87,12 @@
             </div>
         </div>
         <div class="rowsOfCards">
-            <div class="cards thumbnail" ng-style="{{isUserCard(SessionId, userCard.user)}}" ng-repeat="userCard in userCards" ng-click="pickFromTrade(userCard._id, userCard.user)">
+            <div ng-class="{cards: true, thumbnail: true, currentUserCard: isUserCard(SessionId, userCard.user)}" ng-repeat="userCard in userCards track by $index" ng-click="pickFromTrade(userCard._id, userCard.user)">
                 <div class="caption">
                     <h3>{{userCard.card.name}}</h3>
                 </div>
-                <div class="imgContainer" ng-style="{'background-image':'url({{userCard.card.img}})'}">
-                    <!-- <img  style="width:100%"> -->
+                <!-- <img src="{{userCard.card.img}}" class="imgContainer" /> -->
+                <div class="imgContainer" ng-style="{'background-image': 'url('+ userCard.card.img + ')'}">
                 </div>
                 <div class="caption tankDescription multiline-ellipsis">
                     <p>{{userCard.card.description}}

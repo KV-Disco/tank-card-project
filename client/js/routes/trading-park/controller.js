@@ -2,6 +2,7 @@
 angular.module('cardsOfKurskApp')
   .controller('tradingController', function ($scope, $rootScope, cardService, userService, toastr) {
     var socket = io();
+    $scope.itIs = false
 
     cardService.getTradingCards()
       .then(function (res) {
@@ -17,8 +18,9 @@ angular.module('cardsOfKurskApp')
 
     $scope.isUserCard = function(sessionId, userCardId) {
       if(sessionId === userCardId){
-        return {'border-color': 'red'}
+        return true
       }
+      else{return false}
     }
 
 

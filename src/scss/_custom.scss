@@ -21,7 +21,7 @@ span.glyphiconInfo:hover{
     position: relative;
     margin: 10px;
     margin-bottom: -200px;
-    width: 200px;
+    width: 225px;
     height: 350px;
     padding: 5px 15px;
     transition-timing-function: ease;
@@ -37,8 +37,6 @@ span.glyphiconInfo:hover{
         overflow: fade(5%);
         overflow: hidden;
         p {
-            text-align: justify;
-            text-justify: inter-word;
             font-size: 12px;
         }
     }
@@ -86,6 +84,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', end
     min-height: 700px;
 }
 
+.currentUserCard{border-color: red}
 
 .rowsOfCards {
     margin-top: 30px;
