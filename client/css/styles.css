@@ -201,6 +201,9 @@ header nav a {
   -o-transition: all 0.3s;
   transition: all 0.3s; }
 
+header nav a:visited {
+  color: #E9E2BF; }
+
 header nav a:hover {
   color: white; }
 

@@ -198,6 +198,8 @@ header {
       -ms-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s; }
+      header nav a:visited {
+        color: $textColor; }
       header nav a:hover {
         color: white; }
   header.smaller {
