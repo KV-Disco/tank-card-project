@@ -2,7 +2,7 @@
 
 <a href="https://www.w3.org/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/html5-css3-js.png" width= "128px"></a><a href="https://sass-lang.com/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/sass.png" width= "64px"></a><a href="https://getbootstrap.com/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/bootstrap.png" width= "64px"></a><a href="https://www.ecma-international.org/ecma-262/6.0/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/es6.png" width= "64px"></a><a href="https://jquery.com/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/jquery.png" width= "128px"></a>
 
-<a href="https://www.npmjs.com/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/npm.png" width= "128px"></a><a href="https://bower.io/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/bower.png" width= "64px"></a>
+<a href="https://www.npmjs.com/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/npm.png" width= "128px"></a><a href="https://bower.io/"><img src="https://github.com/MarioTerron/logo-images/blob/master/logos/bower.png" width= "64px"></a><a href="https://angularjs.org/"><img src="https://github.com/KV-Disco/tank-card-project/tree/master/blob/master/angularjs.png" width= "64px"
 
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
@@ -10,9 +10,12 @@
 
 This repository contains a fullstack project **CARDS OF KURSK**, in it the user will be given the task of collecting cards of historic tanks.
 
-### Installation
+The web is a semimultiplayer game of collecting cards. Each user will be given 
+
+## Installation
 
 You need to have installed NodeJS with npm, bower and MongoDB
+
 ---
 
 **First** you will need to run on terminal:
