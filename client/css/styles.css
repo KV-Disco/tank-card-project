@@ -505,8 +505,6 @@ input {
     overflow: fade(5%);
     overflow: hidden; }
     .cardsUsers .tankDescription p {
-      text-align: justify;
-      text-justify: inter-word;
       font-size: 12px; }
 
 .humberto {

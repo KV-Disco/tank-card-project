@@ -243,3 +243,48 @@ input{
         font-size: 13px;
     }
 }
+
+.cardsUsers {
+    cursor: pointer;
+    border: 5px solid;
+    box-shadow: 3px -2px 5px 2px black;
+    position: relative;
+    margin: 10px;
+    width: 225px;
+    height: 350px;
+    padding: 5px 15px;
+    transition-timing-function: ease;
+    text-shadow: 0px 0px 2px white;
+    .imgContainer {
+        height: 120px;
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+    }
+    .tankDescription {
+        height: 155px;
+        overflow: fade(5%);
+        overflow: hidden;
+        p {
+            font-size: 12px;
+        }
+    }
+}
+
+.humberto{
+    background-image: url('/img/humberto.jpg')
+}
+
+.cardsUsers .is-trading{
+    border-color: blue;
+}
+
+.cardsUsers {
+  transition-property: transform;
+  transition-duration: .2s;
+  transition-timing-function: ease-in;
+}
+
+.cardsUsers:hover {
+  transform: translateY(-30px);
+}
