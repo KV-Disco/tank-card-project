@@ -15,7 +15,7 @@ There users can click then and push then to trade. When a card is pushed to trad
 
 ![trading_park](https://github.com/KV-Disco/tank-card-project/blob/master/img_readme/trading_park.jpg)
 
-On the Trading Park is going to be displayed all the cards the users have pushed to trade. 
+On the Trading Park is going to be displayed all the cards the users have pushed to trade.
 
 ## Installation
 
