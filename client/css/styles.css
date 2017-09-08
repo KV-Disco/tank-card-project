@@ -475,6 +475,7 @@ input {
     font-size: 13px; } }
 
 .cardsUsers {
+  cursor: pointer;
   border: 5px solid;
   box-shadow: 3px -2px 5px 2px black;
   position: relative;
