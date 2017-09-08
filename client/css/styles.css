@@ -180,7 +180,14 @@ header h1#logo {
     font-style: italic;
     font-family: "Black Ops One"; }
   header h1#logo a {
-    color: white; }
+    color: white;
+    text-decoration: none; }
+  header h1#logo a:active {
+    color: white;
+    text-decoration: none; }
+  header h1#logo a:visited {
+    color: white;
+    text-decoration: none; }
   header h1#logo a:hover {
     color: white;
     text-decoration: none; }
