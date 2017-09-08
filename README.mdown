@@ -7,7 +7,15 @@
 
 This repository contains a fullstack project **CARDS OF KURSK**, in it the user will be given the task of collecting cards of historic tanks.
 
-The web is a semimultiplayer game of collecting cards. Each user will be given 
+The web is a game of collecting cards. Each user will be given a set of cards that are going to be displayed on the garage
+
+![garage](https://github.com/KV-Disco/tank-card-project/blob/master/img_readme/garage.jpg)
+
+There users can click then and push then to trade. When a card is pushed to trade it will be displayed on the Trading Park
+
+![trading_park](https://github.com/KV-Disco/tank-card-project/blob/master/img_readme/trading_park.jpg)
+
+On the Trading Park is going to be displayed all the cards the users have pushed to trade. 
 
 ## Installation
 
