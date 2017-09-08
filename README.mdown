@@ -10,8 +10,6 @@
 
 This repository contains a fullstack project **CARDS OF KURSK**, in it the user will be given the task of collecting cards of historic tanks.
 
-![Standard - JavaScript Style Guide](clien/img/humberto.jpg)
-
 ### Installation
 
 You need to have installed NodeJS with npm, bower and MongoDB
