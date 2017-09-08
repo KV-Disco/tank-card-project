@@ -11,9 +11,9 @@ angular.module('cardsOfKurskApp')
       socket.on('timeToUpdate', (loadingCardId) => {
         var myCardSelector = angular.element( document.querySelector( loadingCardId ) )
         
-        myCardSelector.removeClass('loading')
         cardService.getTradingCards()
           .then(function (res) {
+            myCardSelector.removeClass('loading')
             $scope.userCards = res.data
           })
       })
